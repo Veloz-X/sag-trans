@@ -33,7 +33,15 @@
 
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      
+      <ul class="navbar-nav" >
+      <?php foreach($menu as $item): ?>
+        <li class="nav-item">
+          <a href="<?=$item['url'] ?>" class="nav-link">
+            <img src="<?=$item['img'] ?>" width="20"> <?=$item['title'] ?>
+          </a>
+        </li>
+        <?php endforeach; ?>
+      </ul>
     </div>
   </nav>
   <!-- FIN DE NAV  -->
