@@ -34,7 +34,7 @@ if(mysqli_num_rows($result) > 0)
 
 
 				<td><font  size=2>
-				<strong>Doc. # </strong>'.$row["documento"].'
+				<strong>Doc. # </strong>'.$row["documento"].'<strong>Estado </strong>'.$row["estado"].'
 				<br>
 				<strong>Fecha: </strong>'.$row["fecha"].'
 				<br>
@@ -65,7 +65,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo '<br> Documento No existe - Netflixjj';
+	echo '<br> Documento No existe - Netflix - SAG';
 }
 
 ?>
