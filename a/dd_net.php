@@ -38,20 +38,15 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>Fecha: </strong>'.$row["fecha"].'
 				<br>
-				<strong>Tipo: </strong>'.$row["tipo"].'*
-				<br>
 				<img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="20">&nbsp;'.$row["correo"].'
 				<br>
-				<strong>Contraseña: </strong>'.$row["contra"].'*
-				<br>
-				<strong>Nota: </strong>'.$row["nota"].'*
-
+				<strong>Tipo: </strong>'.$row["tipo"].'*
 				</font>
 				</td>
 				<tr>
 
 				<td colspan="2">
-				<a href="/mante='.$row["id"].'">
+				<a href="../a/details.php?details='.$row["id"].'">
 				<input type="submit" name="inicio"  class="btn btn-primary btn-block" value="null"></td>
 				</a>	
 				</tr>
