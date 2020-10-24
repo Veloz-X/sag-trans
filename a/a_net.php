@@ -1,5 +1,6 @@
 <?php
-include '../bd/config.php';
+$u_bd=base_url('/bd/config.php');
+include '$u_bd';
 
 $table='t_net';
 $output = '';
