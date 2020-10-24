@@ -1,6 +1,7 @@
 <?php
 $u_bd=base_url('/bd/config.php');
-include '$u_bd';
+var_dump($u_bd);
+include '../bd/config.php';
 
 $table='t_net';
 $output = '';
@@ -60,7 +61,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo '<br> Documento No existe netttttttt';
+	echo '<br> Documento No existe - Netflix';
 }
 
 ?>
