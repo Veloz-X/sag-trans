@@ -34,8 +34,8 @@ if(mysqli_num_rows($result) > 0)
 
 
 				<td><font  size=2>
-				<strong>Doc. # </strong>'.$row["documento"].'&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<strong>Estado: </strong><small class="text-muted">
-				&nbsp; &nbsp;Activo
+				<strong>Doc. # </strong>'.$row["documento"].'&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<strong>Estado: </strong><small class="text-muted">
+				&nbsp; Activo &nbsp;
 				<div class="spinner-grow spinner-grow-sm '.$row["estado"].'" role="status">
 				  <span class="sr-only">Loading...</span>
 				</div>
