@@ -1,5 +1,5 @@
 <?php 
-function main_menu1 (){
+function menu_home (){
     return array(
         array(
             'title'=>'Free Fire',

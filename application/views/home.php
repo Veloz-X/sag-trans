@@ -40,6 +40,7 @@
             <img src="<?=$item['img'] ?>" width="20"> <?=$item['title'] ?>
           </a>
         </li>
+        <?php var_dump($menu) ?>
         <?php endforeach; ?>
       </ul>
     </div>

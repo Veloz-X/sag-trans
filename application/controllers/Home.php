@@ -2,15 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
-
-
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->helper(array('getmenu','url'));
+	}
 
 	public function index()
 	{
-		// $data['menu'] = main_menu1();
+		$data['menu'] = menu_home();
 		$this->load->view('home');
 	}
-	public function create(){
-		$this->load->view('mante');
-	}
+
 }
