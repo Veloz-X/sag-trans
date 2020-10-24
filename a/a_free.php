@@ -1,7 +1,9 @@
 <?php
-// $this->load->database();
-include '../bd/config.php';
-// $query = $this->db->query('SELECT name, title, email FROM my_table');
+$u_bd=base_url('../bd/config.php');
+include '$u_bd';
+
+var_dump($u_bd);
+
 $table='t_free';
 $output = '';
 if(isset($_POST["query"]))
