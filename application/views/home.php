@@ -1,6 +1,5 @@
 <?php 
-function menu_home (){
-  return array(
+$menu=array(
       array(
           'title'=>'Free Fire',
           'img'=>'https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png',
@@ -27,7 +26,7 @@ function menu_home (){
           'url'=>base_url('/mante'),
       ),
   );
-$data['menu'] = menu_home();
+
 
 ?>
 <!DOCTYPE html>
