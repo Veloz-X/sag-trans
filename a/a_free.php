@@ -1,5 +1,5 @@
 <?php
-$u_bd=base_url('../bd/config.php');
+$u_bd=base_url('/bd/config.php');
 include '$u_bd';
 
 var_dump($u_bd);
