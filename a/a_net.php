@@ -1,6 +1,5 @@
 <?php
-$u_bd=base_url('/bd/config.php');
-var_dump($u_bd);
+
 include '../bd/config.php';
 
 $table='t_net';
