@@ -56,7 +56,7 @@ if(mysqli_num_rows($result) > 0)
 				<tr>
 
 				<td colspan="2">
-				<a href="/mante='.$row["id"].'">
+				<a href="/mante">
 				<input type="submit" name="inicio"  class="btn btn-primary btn-block" value="null"></td>
 				</a>	
 				</tr>
