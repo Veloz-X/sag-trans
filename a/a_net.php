@@ -34,10 +34,11 @@ if(mysqli_num_rows($result) > 0)
 
 
 				<td><font  size=2>
-				<strong>Doc. # </strong>'.$row["documento"].'&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<strong>Estado: </strong>'.$row["estado"].'<small class="text-muted">
+				<strong>Doc. # </strong>'.$row["documento"].'&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<strong>Estado: </strong><small class="text-muted">
+				&nbsp; &nbsp;Activo
 				<div class="spinner-grow spinner-grow-sm '.$row["estado"].'" role="status">
 				  <span class="sr-only">Loading...</span>
-				</div>&nbsp; &nbsp;Activo
+				</div>
 			  </small>
 				<br>
 				<strong>Fecha: </strong>'.$row["fecha"].'
