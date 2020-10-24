@@ -65,7 +65,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo '<br> Documento No existe - Netflix';
+	echo '<br> Documento No existe - Netflixjj';
 }
 
 ?>
