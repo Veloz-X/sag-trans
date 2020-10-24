@@ -57,7 +57,7 @@ if(mysqli_num_rows($result) > 0)
 
 				<td colspan="2">
 				<a href="/mante">
-				<input type="submit" name="inicio"  class="btn btn-primary btn-block" value="null"></td>
+				<input type="submit" name="inicio"  class="btn btn-primary btn-block" value="Detalles"></td>
 				</a>	
 				</tr>
 
@@ -70,7 +70,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo '<br> Documento No existe - Netflix - SAG';
+	echo '<br> Documento No existe - Netflix - STOREANDGAMERS.APP';
 }
 
 ?>
