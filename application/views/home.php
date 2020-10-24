@@ -33,7 +33,7 @@
 
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <?php var_dump('menu') ?>
+      <?php var_dump($menu) ?>
     </div>
   </nav>
   <!-- FIN DE NAV  -->
