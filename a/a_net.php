@@ -1,7 +1,10 @@
 <?php
-include '../bd/config.php';
+$u_bd=base_url('/bd/config.php');
+include '$u_bd';
 
-$table='t_net';
+var_dump($u_bd);
+
+$table='t_free';
 $output = '';
 if(isset($_POST["query"]))
 {
@@ -37,15 +40,15 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>Fecha: </strong>'.$row["fecha"].'
 				<br>
-				<img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="20">&nbsp;'.$row["correo"].'
+				<img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">&nbsp;'.$row["nick"].'
 				<br>
-				<strong>Tipo: </strong>'.$row["tipo"].'*
+				<strong>Diamantes: </strong>'.$row["diamantes"].'*
 				</font>
 				</td>
 				<tr>
 
 				<td colspan="2">
-				<a href="../admin/dashboard/net/details.php?details='.$row["id"].'">
+				<a href="../admin/dashboard/free/details.php?details='.$row["id"].'">
 				<input type="submit" name="inicio"  class="btn btn-primary btn-block" value="Detalles"></td>
 				</a>	
 				</tr>

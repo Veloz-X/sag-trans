@@ -53,7 +53,7 @@
 
 		function load_data(query) {
 			$.ajax({
-				url: "<?=  base_url('/a/a_free.php')?>",
+				url: "<?=  base_url('/a/a_net.php')?>",
 				method: "post",
 				data: {
 					query: query
