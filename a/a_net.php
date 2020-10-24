@@ -46,7 +46,7 @@ if(mysqli_num_rows($result) > 0)
 				<tr>
 
 				<td colspan="2">
-				<a href="../admin/dashboard/net/details.php?details='.$row["id"].'">
+				<a href="../a/details.php?details='.$row["id"].'">
 				<input type="submit" name="inicio"  class="btn btn-primary btn-block" value="Detalles"></td>
 				</a>	
 				</tr>
