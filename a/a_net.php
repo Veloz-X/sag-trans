@@ -16,8 +16,7 @@ if(isset($_POST["query"]))
 }
 else
 {
-	$query = "
-	SELECT * FROM $table WHERE `id` = 2 ";
+	echo '<br> Documento No existe - Netflix - STOREANDGAMERS.APP';
 }
 $result = mysqli_query($conn, $query);
 if(mysqli_num_rows($result) > 0)
