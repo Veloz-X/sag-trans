@@ -1,7 +1,7 @@
 <?php
+include '../bd/config.php';
 $table = 't_net';
 
-include 'config.php';
 $update = false;
 $id = "";
 $documento = "";

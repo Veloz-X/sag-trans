@@ -1,3 +1,7 @@
+<?php 
+include '/a/action.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

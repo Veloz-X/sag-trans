@@ -56,8 +56,8 @@ if(mysqli_num_rows($result) > 0)
 				<tr>
 
 				<td colspan="2">
-				<a href="/mante">
-				<input type="submit" name="inicio"  class="btn btn-primary btn-block" value="Detalles"></td>
+				<a href="details.php?details=<?= $row["documento"];?>">
+				<input type="submit" name="details"  class="btn btn-primary btn-block" value="Detalles"></td>
 				</a>	
 				</tr>
 
