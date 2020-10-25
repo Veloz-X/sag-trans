@@ -1,7 +1,8 @@
 <?php
 include '../bd/config.php';
 include '../a/action.php';
-$id=$_GET['details'];
+
+
 $query="SELECT * FROM $table WHERE id=?";
 $stmt=$conn->prepare($query);
 $stmt->bind_param("i",$id);
