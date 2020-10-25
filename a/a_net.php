@@ -16,7 +16,7 @@ if(isset($_POST["query"]))
 }
 else
 {
-	echo '<br> Ingrese su # De Documento';
+	echo '<br> Ingrese el # De Documento';
 }
 $result = mysqli_query($conn, $query);
 if(mysqli_num_rows($result) > 0)
@@ -57,8 +57,8 @@ if(mysqli_num_rows($result) > 0)
 				<tr>
 
 				<td colspan="2">
-				<a href="../a/details.php?details='.$row["id"].'">
-				<input type="submit" name="details"  class="btn btn-primary btn-block" value="Detalles"></td>
+				<a href="">
+				<input type="submit" name="details"  class="btn btn-primary btn-block" value="Próximamente"></td>
 				</a>	
 				</tr>
 
@@ -72,7 +72,7 @@ if(mysqli_num_rows($result) > 0)
 else
 {
 	echo '<br> Documento No existe - Netflix.';
-	echo '<br> Nota:v0.58.b Estable* ';
+	
 }
 
 
