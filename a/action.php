@@ -4,8 +4,7 @@ $table = 't_net';
 
 
 $id = "";
-$documento = "";
-$fecha = "";
+
 
 
 
@@ -19,5 +18,5 @@ if(isset($_GET['details'])){
     $row=$result->fetch_assoc();
 
     $vid=$row['id'];
-    $vdocumento=$row['documento'];
+
 }
