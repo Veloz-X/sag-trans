@@ -1,31 +1,31 @@
-<?php 
-$menu=array(
-      array(
-          'title'=>'Free Fire',
-          'img'=>'https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png',
-          'url'=>base_url('/trans_free'),
-      ),
-      array(
-          'title'=>'PUBG MOBILE',
-          'img'=>'https://seagm-media.seagmcdn.com/icon_400/930.jpg',
-          'url'=>base_url('/demo'),
-      ),
-      array(
-          'title'=>'Google Play Gift Card',
-          'img'=>'https://seagm-media.seagmcdn.com/icon_400/225.jpg',
-          'url'=>base_url('/mante'),
-      ),
-      array(
-          'title'=>'iTunes Gift Card',
-          'img'=>'https://seagm-media.seagmcdn.com/icon_400/576.jpg',
-          'url'=>base_url('/mante'),
-      ),
-      array(
-          'title'=>'PlayStation Network Card',
-          'img'=>'https://seagm-media.seagmcdn.com/icon_400/189.jpg',
-          'url'=>base_url('/mante'),
-      ),
-  );
+<?php
+$menu = array(
+  array(
+    'title' => 'Free Fire',
+    'img' => 'https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png',
+    'url' => base_url('/trans_free'),
+  ),
+  array(
+    'title' => 'PUBG MOBILE',
+    'img' => 'https://seagm-media.seagmcdn.com/icon_400/930.jpg',
+    'url' => base_url('/demo'),
+  ),
+  array(
+    'title' => 'Google Play Gift Card',
+    'img' => 'https://seagm-media.seagmcdn.com/icon_400/225.jpg',
+    'url' => base_url('/mante'),
+  ),
+  array(
+    'title' => 'iTunes Gift Card',
+    'img' => 'https://seagm-media.seagmcdn.com/icon_400/576.jpg',
+    'url' => base_url('/mante'),
+  ),
+  array(
+    'title' => 'PlayStation Network Card',
+    'img' => 'https://seagm-media.seagmcdn.com/icon_400/189.jpg',
+    'url' => base_url('/mante'),
+  ),
+);
 
 
 ?>
@@ -64,23 +64,23 @@ $menu=array(
 
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      
 
-    <ul class="navbar-nav" >
-      <?php foreach($menu as $item): ?>
-        <li class="nav-item">
-          <a href="<?=$item['url'] ?>" class="nav-link">
-            <img src="<?=$item['img'] ?>" width="20"> <?=$item['title'] ?>
-          </a>
-        </li>
-        
+
+      <ul class="navbar-nav">
+        <?php foreach ($menu as $item) : ?>
+          <li class="nav-item">
+            <a href="<?= $item['url'] ?>" class="nav-link">
+              <img src="<?= $item['img'] ?>" width="20"> <?= $item['title'] ?>
+            </a>
+          </li>
+
         <?php endforeach; ?>
       </ul>
     </div>
   </nav>
   <!-- FIN DE NAV  -->
 
-    
+
 
   <!-- ANUNCIO -->
 
@@ -240,9 +240,16 @@ $menu=array(
         <div class="card-body">
           <!-- PRODUCTO -->
           <div class="row row-cols-1 row-cols-md-5 p-1">
-              <!-- INICIO ACTUALIZACION V2 -->
-              
-              <!-- FIN ACTUALIZACION V2 -->
+            <!-- INICIO ACTUALIZACION V2 -->
+            <div class="card bg-dark text-white">
+              <img src="..." class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+              </div>
+            </div>
+            <!-- FIN ACTUALIZACION V2 -->
             <!-- NETFLIX-->
             <a href="p/net.php" class="text-decoration-none">
               <div class="col mb-4">
@@ -275,20 +282,20 @@ $menu=array(
               </div>
             </div>
 
-            </div>
-
-
-
           </div>
 
 
 
         </div>
+
+
+
       </div>
     </div>
   </div>
+  </div>
   <!-- FIN DE PERUEBA -->
-<hr>
+  <hr>
   v0.37.b
   </div>
   </div>
