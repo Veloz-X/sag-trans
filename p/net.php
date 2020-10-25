@@ -43,7 +43,7 @@ include '/a/action.php';
 			</div>
 			<input type="text" id="search-free-fire" name="search" class="form-control" placeholder="Documento">
 			&nbsp;
-			<a href="">
+			<a href="../a/details.php">
 			<button class="btn btn-outline-success " type="submit">Buscar</button>
 			</a>
 			
