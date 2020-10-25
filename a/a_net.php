@@ -16,7 +16,7 @@ if(isset($_POST["query"]))
 }
 else
 {
-	echo '<br> Documento No existe - Netflix - STOREANDGAMERS.APP';
+	echo '<br> Ingrese su # De Documento';
 }
 $result = mysqli_query($conn, $query);
 if(mysqli_num_rows($result) > 0)
@@ -71,7 +71,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo '<br> Documento No existe - Netflix - STOREANDGAMERS.APP';
+	echo '<br> Documento No existe - Netflix.';
 }
 
 
