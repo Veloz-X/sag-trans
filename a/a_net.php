@@ -2,7 +2,7 @@
 
 include '../bd/config.php';
 include '../a/action.php';
-include '../a/details.php';
+
 
 $table='t_net';
 $output = '';
