@@ -64,7 +64,7 @@ include '../a/action.php'
               </tr>
               <tr>
                 <th scope="row">Cliente:</th>
-                <td><img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20"><?= $vnick;?>
+                <td><img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20"><?= $vdocumento;?>
               <br><?= $vdocumento; ?>
               </td>
 
