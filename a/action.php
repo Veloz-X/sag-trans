@@ -2,25 +2,22 @@
 include '../bd/config.php';
 $table = 't_net';
 
-$update = false;
+
 $id = "";
 $documento = "";
 $fecha = "";
 
 
 
-if (isset($_GET['details'])) {
-    $id = $_GET['details'];
-    $query = "SELECT * FROM $table WHERE id=?";
-    $stmt = $conn->prepare($query);
-    $stmt->bind_param("i", $id);
+if(isset($_GET['details'])){
+    $id=$_GET['details'];
+    $query="SELECT * FROM crud WHERE id=?";
+    $stmt=$conn->prepare($query);
+    $stmt->bind_param("i",$id);
     $stmt->execute();
-    $result = $stmt->get_result();
-    $row = $result->fetch_assoc();
+    $result=$stmt->get_result();
+    $row=$result->fetch_assoc();
 
-    $vid = $row['id'];
-    $vdocumento = $row['documento'];
-    $vfecha = $row['fecha'];
-
-
+    $vid=$row['id'];
+    $vdocumento=$row['documento'];
 }
