@@ -245,7 +245,7 @@ $menu=array(
               <!-- FIN ACTUALIZACION V2 -->
             <!-- NETFLIX-->
             <a href="p/net.php" class="text-decoration-none">
-              <div class="col mb-4">
+              <div class="col mb-2">
                 <div class="card">
                   <img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" class="card-img-top p-2" width="50%">
                   <h5 class="card-title font-weight-bold text-center p-1">Netflix</h5>
