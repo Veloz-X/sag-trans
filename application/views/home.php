@@ -239,7 +239,7 @@ $menu=array(
       <div id="collapseTree" class="collapse" aria-labelledby="headingtree" data-parent="#accordionExample">
         <div class="card-body">
           <!-- PRODUCTO -->
-          <div class="row row-cols-2 row-cols-md-5 p-1">
+          <div class="row row-cols-1 row-cols-md-5 p-1">
               <!-- INICIO ACTUALIZACION V2 -->
               
               <!-- FIN ACTUALIZACION V2 -->
