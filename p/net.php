@@ -1,6 +1,6 @@
 <?php 
 include '/a/action.php';
-$url_1=base_url('/a/details.php');
+// $url_1=base_url('/a/details.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +43,7 @@ $url_1=base_url('/a/details.php');
 			</div>
 			<input type="text" id="search-free-fire" name="search" class="form-control" placeholder="Documento">
 			&nbsp;
-			<a href="<?= $url_1 ?>">
+			<a href="">
 			<button class="btn btn-outline-success " type="submit">Buscar</button>
 			</a>
 			
