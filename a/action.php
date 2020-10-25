@@ -5,12 +5,8 @@ $table = 't_net';
 $update = false;
 $id = "";
 $documento = "";
-$nick = "";
 $fecha = "";
-$precio = "";
-$diamantes = "";
-$id_user = "";
-$estado = "";
+
 
 
 if (isset($_GET['details'])) {
@@ -25,10 +21,6 @@ if (isset($_GET['details'])) {
     $vid = $row['id'];
     $vdocumento = $row['documento'];
     $vfecha = $row['fecha'];
-    // $vnick = $row['nick'];
-    // $vdiamantes = $row['diamantes'];
-    // $vid_user = $row['id_user'];
-    // $vprecio = $row['precio'];
-    // $vestado = $row['estado'];
+
 
 }
