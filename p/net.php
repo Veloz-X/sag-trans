@@ -1,6 +1,6 @@
 <?php 
-include '/a/action.php';
-// $url_1=base_url('/a/details.php');
+include '../bd/config.php';
+include '../a/action.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
