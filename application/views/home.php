@@ -288,8 +288,8 @@ $menu=array(
     </div>
   </div>
   <!-- FIN DE PERUEBA -->
-
-VERSION V2
+<hr>
+  v0.37.b
   </div>
   </div>
 </body>
