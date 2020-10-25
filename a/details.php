@@ -1,5 +1,6 @@
 <?php
-include 'action.php'
+include '../bd/config.php';
+include '../a/action.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,29 +43,29 @@ include 'action.php'
               </tr>
               <tr>
                 <th scope="row">Fecha:</th>
-                <td><?= $vfecha; ?></td>
+                <td><?= $vdocumento; ?></td>
 
 
               </tr>
               <tr>
                 <th scope="row">Estado:</th>
-                <td><a class="badge badge-success p-1 text-light"><?= $vestado; ?></a></td>
+                <td><a class="badge badge-success p-1 text-light"><?= $vdocumento; ?></a></td>
 
               </tr>
               <tr>
                 <th scope="row">Precio:</th>
-                <td><?= $vprecio; ?></td>
+                <td><?= $vdocumento; ?></td>
 
               </tr>
               <tr>
                 <th scope="row">Producto:</th>
-                <td>Diamantes <?= $vdiamantes; ?> *</td>
+                <td>Diamantes <?= $vdocumento; ?> *</td>
 
               </tr>
               <tr>
                 <th scope="row">Cliente:</th>
                 <td><img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20"><?= $vnick;?>
-              <br><?= $vid_user; ?>
+              <br><?= $vdocumento; ?>
               </td>
 
               </tr>

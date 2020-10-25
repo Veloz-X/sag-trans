@@ -24,7 +24,7 @@ if (isset($_GET['details'])) {
 
     $vid = $row['id'];
     $vdocumento = $row['documento'];
-    // $vfecha = $row['fecha'];
+    $vfecha = $row['fecha'];
     // $vnick = $row['nick'];
     // $vdiamantes = $row['diamantes'];
     // $vid_user = $row['id_user'];
