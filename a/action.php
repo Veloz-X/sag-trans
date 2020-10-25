@@ -11,7 +11,7 @@ $fecha = "";
 
 if(isset($_GET['details'])){
     $id=$_GET['details'];
-    $query="SELECT * FROM crud WHERE id=?";
+    $query="SELECT * FROM $table WHERE id=?";
     $stmt=$conn->prepare($query);
     $stmt->bind_param("i",$id);
     $stmt->execute();
