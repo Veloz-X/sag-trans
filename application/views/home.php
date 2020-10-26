@@ -245,11 +245,14 @@ $menu = array(
               <img src="https://seagm-media.seagmcdn.com/special_deals/card/595.jpg" class="card-img " width="314px" height="120px">
               <div class="card-img-overlay ">
                 <div class="row row-cols-2">
-                  <div >
-                    dsds
+                  <div>
+                    img 72px
                   </div>
                   <div>
-dsdsds
+                    dsdsds
+                  </div>
+                  <div>
+                    dsdsds
                   </div>
 
                   <h5 class="card-title">Netflix Cuentas</h5>
