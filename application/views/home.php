@@ -252,7 +252,7 @@ $menu = array(
                     <img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="72px" height="72px">
                   </div>
                   <div>
-                    3
+                  Netflix Cuentas
                   </div>
                   <div>
                     4
