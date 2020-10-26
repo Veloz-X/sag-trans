@@ -102,38 +102,29 @@ $menu = array(
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
           <!-- PRODUCTO JUEGO  -->
-          <div class="row row-cols-2 row-cols-md-5 p-1">
+          <div class="row row-cols-1 row-cols-1 ">
 
             <!-- FREE FIRE -->
-            <a href="p/free.php" class="text-decoration-none">
-              <div class="col mb-4">
-                <div class="card">
-                  <img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" class="card-img-top p-2" width="50%">
-                  <h5 class="card-title font-weight-bold text-center p-1">Free Fire</h5>
-                  <div class="card-footer ">
-                    <small class="text-muted">
-                      <div class="spinner-grow spinner-grow-sm text-success" role="status">
-                        <span class="sr-only">Loading...</span>
-                      </div>&nbsp; &nbsp;Activo
-                    </small>
+
+            <!-- gg -->
+            <a href="p/free.php" class="text-decoration:none">
+              <div class="col-sm-3">
+                <div class="card text-left">
+                  <img style="border-radius: 8px;" width="370" height="120" src="https://seagm-media.seagmcdn.com/special_deals/card/869.jpg">
+                  <div class="card-img-overlay ">
+                  <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="https://seagm-media.seagmcdn.com/icon_400/869.jpg">
+                    <h5 style=" float:left;  ">&nbsp;</h5><br>
+                    <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br>
+                    <h5 style="float:left; ">&nbsp;</h5>
                   </div>
+
                 </div>
               </div>
             </a>
+
+            <hr>
             <!-- PUBG MOBILE -->
-            <div class="col mb-4">
-              <div class="card">
-                <img src="https://seagm-media.seagmcdn.com/icon_400/930.jpg" class="card-img-top p-2" width="50%">
-                <h5 class="card-title font-weight-bold text-center p-1">PUBG M</h5>
-                <div class="card-footer ">
-                  <small class="text-muted">
-                    <div class="spinner-grow spinner-grow-sm text-danger" role="status">
-                      <span class="sr-only">Loading...</span>
-                    </div>&nbsp; Desactivado
-                  </small>
-                </div>
-              </div>
-            </div>
+
 
 
 
@@ -246,56 +237,17 @@ $menu = array(
               <div class="card-img-overlay ">
                 <div class="row row-cols-3">
                   <div>
-                    1
-                  </div>
-                  <div>
                     <img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="72px" height="72px">
                   </div>
-                  <div>
-                  Netflix Cuentas
-                  </div>
-                  <div>
-                    4
-                  </div>
-
-                  
                 </div>
-
-
               </div>
             </div>
             <!-- FIN ACTUALIZACION V2 -->
             <!-- NETFLIX-->
-            <a href="p/net.php" class="text-decoration-none">
-              <div class="col mb-4">
-                <div class="card">
-                  <img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" class="card-img-top p-2" width="50%">
-                  <h5 class="card-title font-weight-bold text-center p-1">Netflix</h5>
-                  <div class="card-footer ">
-                    <small class="text-muted">
-                      <div class="spinner-grow spinner-grow-sm text-success" role="status">
-                        <span class="sr-only">Loading...</span>
-                      </div>&nbsp; &nbsp;Activo
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </a>
+
 
             <!-- ITUNES -->
-            <div class="col mb-4">
-              <div class="card">
-                <img src="https://seagm-media.seagmcdn.com/icon_400/622.jpg" class="card-img-top p-2" width="50%">
-                <h5 class="card-title font-weight-bold text-center p-1">iTunes</h5>
-                <div class="card-footer ">
-                  <small class="text-muted">
-                    <div class="spinner-grow spinner-grow-sm text-danger" role="status">
-                      <span class="sr-only">Loading...</span>
-                    </div>&nbsp; Desactivado
-                  </small>
-                </div>
-              </div>
-            </div>
+
 
           </div>
 
@@ -312,8 +264,15 @@ $menu = array(
   <!-- FIN DE PERUEBA -->
   <hr>
   v0.37.b
+
+
+
+
   </div>
   </div>
+
+
+
 </body>
 
 </html>
