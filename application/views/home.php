@@ -114,7 +114,8 @@ $menu = array(
                   <div class="card-img-overlay ">
                   <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="https://seagm-media.seagmcdn.com/icon_400/869.jpg">
                     <h5 style=" float:left;  ">&nbsp;</h5><br>
-                    <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br>
+                    <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
+                    <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire</h5><br>
                     <h5 style="float:left; ">&nbsp;</h5>
                   </div>
 

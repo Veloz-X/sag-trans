@@ -1,3 +1,7 @@
+<?php 
+include '../bd/config.php';
+include '../a/action.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,9 +26,8 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<!-- Brand -->
-
 		<div>
-			<a href="  <?php base_url('/') ?> ">
+			<a href="../index.php">
 				<img class="p-1" src="https://www.storeandgamers.com/uploads/logo/logo_5ed1c11998a10.png" width="150">
 			</a>
 		</div>
@@ -39,7 +42,11 @@
 				<span class="input-group-text" id="basic-addon1">#</span>
 			</div>
 			<input type="text" id="search-free-fire" name="search" class="form-control" placeholder="Documento">
-			&nbsp; <button class="btn btn-outline-success " type="submit">Buscar</button>
+			&nbsp;
+			<a href="../a/details.php">
+			<button class="btn btn-outline-success " type="submit">Buscar</button>
+			</a>
+			
 		</div>
 		<div id="result"></div>
 	</div>
@@ -54,7 +61,7 @@
 
 		function load_data(query) {
 			$.ajax({
-				url: "../a/a_free.php ",
+				url: "../a/a_net.php",
 				method: "post",
 				data: {
 					query: query
