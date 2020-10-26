@@ -258,7 +258,7 @@ $menu = array(
                     4
                   </div>
 
-                  <h5 class="card-title">Netflix Cuentas</h5>
+                  
                 </div>
 
 
