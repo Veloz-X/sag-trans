@@ -243,7 +243,7 @@ $menu = array(
             <!-- INICIO ACTUALIZACION V2 -->
             <div class="card text-white p-2">
               <img src="https://seagm-media.seagmcdn.com/special_deals/card/595.jpg" class="card-img " width="314px" height="120px" >
-              <div class="card">
+              <div class="card-img-overlay">
               
               <img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="72px" height="72px" >
                 <h5 class="card-title">Card title</h5>
