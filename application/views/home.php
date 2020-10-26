@@ -244,6 +244,9 @@ $menu = array(
             <div class="card text-white p-2">
               <img src="https://seagm-media.seagmcdn.com/special_deals/card/595.jpg" class="card-img " width="314px" height="120px" alt="...">
               <div class="card-img-overlay">
+              <div class="card text-right">
+              <img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" class="card-img " width="72px" height="72px" alt="...">
+              </div>
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text">Last updated 3 mins ago</p>
