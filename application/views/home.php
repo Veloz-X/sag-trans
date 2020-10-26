@@ -244,7 +244,7 @@ $menu = array(
             <div class="card text-white p-2">
               <img src="https://seagm-media.seagmcdn.com/special_deals/card/595.jpg" class="card-img " width="314px" height="120px">
               <div class="card-img-overlay ">
-                <div class="row row-cols-2">
+                <div class="row row-cols-3">
                   <div>
                     1
                   </div>
