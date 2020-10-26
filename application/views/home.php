@@ -244,20 +244,15 @@ $menu = array(
             <div class="card text-white p-2">
               <img src="https://seagm-media.seagmcdn.com/special_deals/card/595.jpg" class="card-img " width="314px" height="120px">
               <div class="card-img-overlay ">
-                <div class="row row-cols-4">
-                  <div class="card text-white p-2">
-                    img 72px
+                <div class="row row-cols-2">
+                  <div >
+                    <img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="72px" height="72px">
                   </div>
                   <div>
-                    dsdsds
-                  </div>
-                  <div>
-                    dsdsds
-                    dsds
-                    sds
+dsdsds
                   </div>
 
-                  
+                  <h5 class="card-title">Netflix Cuentas</h5>
                 </div>
 
 
