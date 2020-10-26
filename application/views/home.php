@@ -246,7 +246,7 @@ $menu = array(
               <div class="card-img-overlay">
               
               <img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="72px" height="72px" >
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Netflix Cuentas</h5>
               </div>
             </div>
             <!-- FIN ACTUALIZACION V2 -->
