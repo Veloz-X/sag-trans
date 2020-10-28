@@ -44,7 +44,7 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>Fecha: </strong>'.$row["fecha"].'
 				<br>
-				<strong>ID: </strong>'.$row["id_user "].'*
+				<strong>ID: </strong>'.$row["id_user"].'*
 				<br>
 				<img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">&nbsp;'.$row["nick"].'
 				<br>
