@@ -36,7 +36,7 @@ if(mysqli_num_rows($result) > 0)
 
 				<td><font  size=2>
 				<strong>Doc. # </strong>'.$row["documento"].'&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<small class="text-muted">
-				&nbsp; Activo &nbsp;
+				&nbsp; Pagado &nbsp;
 				<div class="spinner-grow spinner-grow-sm '.$row["estado"].'" role="status">
 				  <span class="sr-only">Loading...</span>
 				</div>
@@ -44,11 +44,13 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>Fecha: </strong>'.$row["fecha"].'
 				<br>
-				<strong>Tipo: </strong>'.$row["tipo"].'*
+				<strong>ID: </strong>'.$row["id_user "].'*
 				<br>
-				<img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="20">&nbsp;'.$row["correo"].'
+				<img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">&nbsp;'.$row["nick"].'
 				<br>
-				<strong>Contraseña: </strong>'.$row["contra"].'*
+				<strong>Pago: </strong>'.$row["precio"].'*
+				<br>
+				<strong>Diamantes: </strong>'.$row["diamantes"].'*
 				<br>
 				<strong>Nota: </strong>'.$row["nota"].'*
 
