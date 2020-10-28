@@ -1,8 +1,8 @@
 <?php
-$u_bd=base_url('/bd/config.php');
-include '$u_bd';
 
-var_dump($u_bd);
+include '../bd/config.php';
+include '../a/action.php';
+
 
 $table='t_free';
 $output = '';
@@ -16,8 +16,7 @@ if(isset($_POST["query"]))
 }
 else
 {
-	$query = "
-	SELECT * FROM $table WHERE `id` = 2 ";
+	echo '<br> Ingrese el # De Documento';
 }
 $result = mysqli_query($conn, $query);
 if(mysqli_num_rows($result) > 0)
@@ -36,20 +35,30 @@ if(mysqli_num_rows($result) > 0)
 
 
 				<td><font  size=2>
-				<strong>Doc. # </strong>'.$row["documento"].'
+				<strong>Doc. # </strong>'.$row["documento"].'&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<small class="text-muted">
+				&nbsp; Activo &nbsp;
+				<div class="spinner-grow spinner-grow-sm '.$row["estado"].'" role="status">
+				  <span class="sr-only">Loading...</span>
+				</div>
+			  </small>
 				<br>
 				<strong>Fecha: </strong>'.$row["fecha"].'
 				<br>
-				<img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">&nbsp;'.$row["nick"].'
+				<strong>Tipo: </strong>'.$row["tipo"].'*
 				<br>
-				<strong>Diamantes: </strong>'.$row["diamantes"].'*
+				<img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="20">&nbsp;'.$row["correo"].'
+				<br>
+				<strong>Contraseña: </strong>'.$row["contra"].'*
+				<br>
+				<strong>Nota: </strong>'.$row["nota"].'*
+
 				</font>
 				</td>
 				<tr>
 
 				<td colspan="2">
-				<a href="../admin/dashboard/free/details.php?details='.$row["id"].'">
-				<input type="submit" name="inicio"  class="btn btn-primary btn-block" value="Detalles"></td>
+				<a href="">
+				<input type="submit" name="details"  class="btn btn-primary btn-block" value="Próximamente"></td>
 				</a>	
 				</tr>
 
@@ -62,7 +71,9 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo '<br> Documento No existe';
+	echo '<br> Documento No existe - FreeFire.';
+	
 }
+
 
 ?>
