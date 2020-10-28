@@ -37,7 +37,7 @@ $servicio = array(
     'title' => 'PUBG Mobile',
     'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/930.jpg',
     'icono'=>'https://seagm-media.seagmcdn.com/icon_400/756.jpg',
-    'url' => base_url('/p/free.php'),
+    'url' => base_url('/p/pubgm.php'),
   ),
   array(
     'title' => 'Mobile Legends',
