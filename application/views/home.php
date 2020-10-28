@@ -43,7 +43,7 @@ $servicio = array(
     'title' => 'Mobile Legends',
     'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/758.jpg',
     'icono'=>'https://seagm-media.seagmcdn.com/icon_400/758.jpg',
-    'url' => base_url('/p/free.php'),
+    'url' => base_url('/p/mante'),
   ),
 );
 
