@@ -46,11 +46,11 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>ID: </strong>'.$row["id_user"].'
 				<br>
-				<img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">&nbsp;'.$row["nick"].'
+				<img src="https://seagm-media.seagmcdn.com/icon_400/756.jpg" width="20">&nbsp;'.$row["nick"].'
 				<br>
 				<strong>Pago: </strong>'.$row["precio"].'*
 				<br>
-				<strong>Diamantes: </strong>'.$row["uc"].'&nbsp;<img src="https://gametricksnohacks.digital/freefir/img/resource-2-img.png" width="20">
+				<strong>Diamantes: </strong>'.$row["uc"].'&nbsp;<img src="https://noobgamers.in/wp-content/uploads/2020/03/uc.png" width="20">
 				<br>
 				<strong>Nota: </strong>'.$row["nota"].'*
 
