@@ -302,7 +302,7 @@ $giftcard = array(
   </div>
   <!-- FIN DE PERUEBA -->
   <hr>
-  v0.37.b
+  v.1.4.b
 
 
 
