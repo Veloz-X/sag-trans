@@ -26,6 +26,26 @@ $menu = array(
     'url' => base_url('/mante'),
   ),
 );
+$servicio = array(
+  array(
+    'title' => 'Free Fire',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/869.jpg',
+    'icono'=>'https://seagm-media.seagmcdn.com/icon_400/869.jpg',
+    'url' => base_url('/p/free.php'),
+  ),
+  array(
+    'title' => 'PUBG Mobile',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/930.jpg',
+    'icono'=>'https://seagm-media.seagmcdn.com/icon_400/756.jpg',
+    'url' => base_url('/p/free.php'),
+  ),
+  array(
+    'title' => 'Mobile Legends',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/758.jpg',
+    'icono'=>'https://seagm-media.seagmcdn.com/icon_400/758.jpg',
+    'url' => base_url('/p/free.php'),
+  ),
+);
 
 
 ?>
@@ -105,23 +125,25 @@ $menu = array(
           <div class="row row-cols-1 row-cols-1 ">
 
             <!-- FREE FIRE -->
-
+            <?php foreach ($servicio as $item) : ?>
             <!-- gg -->
-            <a href="p/free.php" class="text-decoration:none">
-              <div class="col-sm-3">
+            <a href="<?= $item['url'] ?>" class="text-decoration:none">
+              <div class=" col-sm-3">
                 <div class="card text-left">
-                  <img style="border-radius: 8px;" width="370" height="120" src="https://seagm-media.seagmcdn.com/special_deals/card/869.jpg">
+                  <img style="border-radius: 8px;" width="370" height="120" src="<?= $item['img'] ?>">
                   <div class="card-img-overlay ">
-                  <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="https://seagm-media.seagmcdn.com/icon_400/869.jpg">
+                  <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
                     <h5 style=" float:left;  ">&nbsp;</h5><br>
                     <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
-                    <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire</h5><br>
+                    <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
                     <h5 style="float:left; ">&nbsp;</h5>
                   </div>
 
                 </div>
               </div>
             </a>
+
+            <?php endforeach; ?>
 
             <hr>
             <!-- PUBG MOBILE -->
@@ -231,15 +253,18 @@ $menu = array(
       <div id="collapseTree" class="collapse" aria-labelledby="headingtree" data-parent="#accordionExample">
         <div class="card-body">
           <!-- PRODUCTO -->
+
+          
           <div class="row row-cols-1 row-cols-md-5 p-1">
             <!-- INICIO ACTUALIZACION V2 -->
             <div class="card text-white p-2">
               <img src="https://seagm-media.seagmcdn.com/special_deals/card/595.jpg" class="card-img " width="314px" height="120px">
               <div class="card-img-overlay ">
-                <div class="row row-cols-3">
-                  <div>
-                    <img src="https://elrincondenetflix.com/wp-content/uploads/2020/04/nuevo-logo-netflix_original.jpg" width="72px" height="72px">
-                  </div>
+              <img class="p-2" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+                    <h5 style=" float:left;  ">&nbsp;</h5><br>
+                    <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
+                    <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
+                    <h5 style="float:left; ">&nbsp;</h5>
                 </div>
               </div>
             </div>

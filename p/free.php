@@ -61,7 +61,7 @@ include '../a/action.php';
 
 		function load_data(query) {
 			$.ajax({
-				url: "../a/a_net.php",
+				url: "../a/a_free.php",
 				method: "post",
 				data: {
 					query: query
