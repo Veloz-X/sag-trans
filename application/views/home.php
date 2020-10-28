@@ -26,7 +26,7 @@ $menu = array(
     'url' => base_url('/mante'),
   ),
 );
-$servicio = array(
+$recarga = array(
   array(
     'title' => 'Free Fire',
     'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/869.jpg',
@@ -43,6 +43,46 @@ $servicio = array(
     'title' => 'Mobile Legends',
     'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/758.jpg',
     'icono'=>'https://seagm-media.seagmcdn.com/icon_400/758.jpg',
+    'url' => base_url('/mante'),
+  ),
+);
+$servicio = array(
+  array(
+    'title' => 'Netflix',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/595.jpg',
+    'icono'=>'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png',
+    'url' => base_url('/p/net.php'),
+  ),
+  array(
+    'title' => 'Amazon Prime',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono'=>'https://lh3.googleusercontent.com/-Zgwtg4Ox6QCOKy6syNCWEnlI3uMw9C3ZUS-Fb_uicTh69xwExuSW9FC91A2kaWHoE6E=s180-rw',
+    'url' => base_url('/mante'),
+  )
+);
+$giftcard = array(
+  array(
+    'title' => 'Google Play',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono'=>'https://seagm-media.seagmcdn.com/icon_400/225.jpg',
+    'url' => base_url('/mante'),
+  ),
+  array(
+    'title' => 'Itunes',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono'=>'https://seagm-media.seagmcdn.com/icon_400/191.jpg',
+    'url' => base_url('/mante'),
+  ),
+  array(
+    'title' => 'PlayStation Network',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono'=>'https://seagm-media.seagmcdn.com/icon_400/189.jpg',
+    'url' => base_url('/mante'),
+  ),
+  array(
+    'title' => 'Xbox Live',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono'=>'https://seagm-media.seagmcdn.com/icon_400/194.jpg',
     'url' => base_url('/mante'),
   ),
 );
@@ -125,7 +165,7 @@ $servicio = array(
           <div class="row row-cols-1 row-cols-1 ">
 
             <!-- FREE FIRE -->
-            <?php foreach ($servicio as $item) : ?>
+            <?php foreach ($recarga as $item) : ?>
             <!-- gg -->
             <a href="<?= $item['url'] ?>" class="text-decoration:none">
               <div class=" col-sm-3">
@@ -170,68 +210,31 @@ $servicio = array(
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
         <div class="card-body">
           <!-- PRODUCTO -->
-          <div class="row row-cols-2 row-cols-md-5 p-1">
+          <div class="row row-cols-1 row-cols-1">
 
-            <!-- GOOGLE PLAY -->
-            <a href="p/googleplay.php" class="text-decoration-none">
-              <div class="col mb-4">
-                <div class="card">
-                  <img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" class="card-img-top p-2" width="50%">
-                  <h5 class="card-title font-weight-bold text-center p-1">Google Play</h5>
-                  <div class="card-footer ">
-                    <small class="text-muted">
-                      <div class="spinner-grow spinner-grow-sm text-success" role="status">
-                        <span class="sr-only">Loading...</span>
-                      </div>&nbsp; &nbsp;Activo
-                    </small>
+          <?php foreach ($giftcard as $item) : ?>
+            <!-- gg -->
+            <a href="<?= $item['url'] ?>" class="text-decoration:none">
+              <div class=" col-sm-3">
+                <div class="card text-left">
+                  <img style="border-radius: 8px;" width="370" height="120" src="<?= $item['img'] ?>">
+                  <div class="card-img-overlay ">
+                  <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+                    <h5 style=" float:left;  ">&nbsp;</h5><br>
+                    <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
+                    <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
+                    <h5 style="float:left; ">&nbsp;</h5>
                   </div>
+
                 </div>
               </div>
             </a>
 
-            <!-- ITUNES -->
-            <div class="col mb-4">
-              <div class="card">
-                <img src="https://seagm-media.seagmcdn.com/icon_400/622.jpg" class="card-img-top p-2" width="50%">
-                <h5 class="card-title font-weight-bold text-center p-1">iTunes</h5>
-                <div class="card-footer ">
-                  <small class="text-muted">
-                    <div class="spinner-grow spinner-grow-sm text-danger" role="status">
-                      <span class="sr-only">Loading...</span>
-                    </div>&nbsp; Desactivado
-                  </small>
-                </div>
-              </div>
-            </div>
-            <!-- PSN -->
-            <div class="col mb-4">
-              <div class="card">
-                <img src="https://seagm-media.seagmcdn.com/icon_400/189.jpg" class="card-img-top p-2" width="50%">
-                <h5 class="card-title font-weight-bold text-center p-1">PlayStation Network </h5>
-                <div class="card-footer ">
-                  <small class="text-muted">
-                    <div class="spinner-grow spinner-grow-sm text-danger" role="status">
-                      <span class="sr-only">Loading...</span>
-                    </div>&nbsp; Desactivado
-                  </small>
-                </div>
-              </div>
-            </div>
-            <!-- XBOX -->
-            <div class="col mb-4">
-              <div class="card">
-                <img src="https://seagm-media.seagmcdn.com/icon_400/194.jpg" class="card-img-top p-2" width="50%">
-                <h5 class="card-title font-weight-bold text-center p-1">Xbox Live</h5>
-                <div class="card-footer ">
-                  <small class="text-muted">
-                    <div class="spinner-grow spinner-grow-sm text-danger" role="status">
-                      <span class="sr-only">Loading...</span>
-                    </div>&nbsp; Desactivado
-                  </small>
-                </div>
-              </div>
-            </div>
+            <?php endforeach; ?>
 
+            <hr>
+
+  
 
 
           </div>
@@ -255,24 +258,34 @@ $servicio = array(
           <!-- PRODUCTO -->
 
           
-          <div class="row row-cols-1 row-cols-md-5 p-1">
-            <!-- INICIO ACTUALIZACION V2 -->
-            <div class="card text-white p-2">
-              <img src="https://seagm-media.seagmcdn.com/special_deals/card/595.jpg" class="card-img " width="314px" height="120px">
-              <div class="card-img-overlay ">
-              <img class="p-2" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
-                    <h5 style=" float:left;  ">&nbsp;</h5><br>
-                    <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
-                    <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
-                    <h5 style="float:left; ">&nbsp;</h5>
-                </div>
-              </div>
-            </div>
-            <!-- FIN ACTUALIZACION V2 -->
-            <!-- NETFLIX-->
+          <div class="row row-cols-1 row-cols-1">
+
+<?php foreach ($servicio as $item) : ?>
+  <!-- gg -->
+  <a href="<?= $item['url'] ?>" class="text-decoration:none">
+    <div class=" col-sm-3">
+      <div class="card text-left">
+        <img style="border-radius: 8px;" width="370" height="120" src="<?= $item['img'] ?>">
+        <div class="card-img-overlay ">
+        <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+          <h5 style=" float:left;  ">&nbsp;</h5><br>
+          <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
+          <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
+          <h5 style="float:left; ">&nbsp;</h5>
+        </div>
+
+      </div>
+    </div>
+  </a>
+
+  <?php endforeach; ?>
+
+  <hr>
 
 
-            <!-- ITUNES -->
+
+
+</div>
 
 
           </div>
