@@ -50,7 +50,7 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>Pago: </strong>'.$row["precio"].'*
 				<br>
-				<strong>Diamantes: </strong>'.$row["diamantes"].'<img src="https://gametricksnohacks.digital/freefir/img/resource-2-img.png" width="20">
+				<strong>Diamantes: </strong>'.$row["diamantes"].'&nbsp;<img src="https://gametricksnohacks.digital/freefir/img/resource-2-img.png" width="20">
 				<br>
 				<strong>Nota: </strong>'.$row["nota"].'*
 
