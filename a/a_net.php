@@ -72,7 +72,7 @@ if(mysqli_num_rows($result) > 0)
 else
 {
 	echo '<br> Documento No existe - Netflix.';
-	echo '<br> Horario de Activacion: de Lunea a Viernes - Tiempo de Activacion de 1 hora hasta 12 Horas.
+	echo '<br> Horario de Activacion: de Lunes a Viernes - Tiempo de Activacion de 1 hora hasta 12 Horas.
 	';
 	
 }
