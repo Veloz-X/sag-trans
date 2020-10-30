@@ -37,18 +37,26 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>Estado: </strong><a class="badge badge-success p-1 text-light">Pagado</a>
 				<br>
-				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD 
+				<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput"><img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD </label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+  </div>
+  
+</form>
+				
 				
 				<br>	
 
 <div class="input-group input-group-sm mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-sm"><img src="https://cdn.icon-icons.com/icons2/1603/PNG/128/price-scan-scanner-bar-barcode-code_108573.png" width="20"></span>
+    
   </div>
   <input type="text" value="'.$row["c"].'" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 </div>
-<hr>
+
 				<strong>Nota: </strong>'.$row["nota"].'*
+				<hr>
 				</font>
 				</td>
 				
