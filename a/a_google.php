@@ -37,11 +37,12 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>Estado: </strong><a class="badge badge-success p-1 text-light">Pagado</a>
 				<br>
+				<hr>	
 				<div class="mx-auto" style="width: 200px;">
 				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD 
 </div>
 				
-				<br>
+
 
 <div class="input-group input-group-sm mb-3">
   <div class="input-group-prepend">
@@ -49,7 +50,7 @@ if(mysqli_num_rows($result) > 0)
   </div>
   <input type="text" value="'.$row["c"].'" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 </div>
-
+<hr>
 				<strong>Nota: </strong>'.$row["nota"].'*
 				</font>
 				</td>
