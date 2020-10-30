@@ -38,7 +38,7 @@
         <span class="input-group-text" id="basic-addon1">#</span>
       </div>
       <input type="text" id="search-free-fire" name="search" class="form-control" placeholder="Documento">
-      &nbsp; <button class="btn btn-outline-success " type="submit">Buscar</button>
+      &nbsp; 
     </div>
 			<div id="result"></div>
 		</div>
