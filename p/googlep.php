@@ -1,6 +1,4 @@
-<?php 
-//   include '../a/a_google.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
