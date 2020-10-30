@@ -51,6 +51,7 @@ if(mysqli_num_rows($result) > 0)
   
 </form>
 				<strong>Nota: </strong>'.$row["nota"].'*
+				<hr>
 				</font>
 				</td>
 				
