@@ -37,14 +37,14 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>Estado: </strong><a class="badge badge-success p-1 text-light">Pagado</a>
 				<br>
-				Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD US<img src="https://media.istockphoto.com/vectors/circle-flag-united-states-of-america-usa-flag-icon-vector-vector-id862664854?b=1&k=6&m=862664854&s=170x170&h=W_E5dhqpVzc5omi08b99O3JCfXKmbEbxY4jJIQi6YuE=" width="35">
+				Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD (US)
 				<br>
-				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">: &nbsp;'.$row["c"].'
+				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20"><strong>:</strong> &nbsp;'.$row["c"].'
 				<br>
+				<strong>Nota: </strong>'.$row["nota"].'*
 				</font>
 				</td>
 				<tr>
-
 				<td colspan="2">
 				<a href="">
 				<input type="submit" name="details"  class="btn btn-primary btn-block" value="Próximamente"></td>
