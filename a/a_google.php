@@ -48,7 +48,7 @@ if(mysqli_num_rows($result) > 0)
 				
 				<br>	
 				<form>
-<div class="input-group input-group-sm mb-3">
+<div class="form-group input-group input-group-sm mb-3">
 <label for="formGroupExampleInput"><img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD </label>
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-sm"><img src="https://cdn.icon-icons.com/icons2/1603/PNG/128/price-scan-scanner-bar-barcode-code_108573.png" width="20"></span>
