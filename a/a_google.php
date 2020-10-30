@@ -42,7 +42,7 @@ if(mysqli_num_rows($result) > 0)
 				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD 
 </div>
 				
-
+<br>
 
 <div class="input-group input-group-sm mb-3">
   <div class="input-group-prepend">
@@ -54,12 +54,7 @@ if(mysqli_num_rows($result) > 0)
 				<strong>Nota: </strong>'.$row["nota"].'*
 				</font>
 				</td>
-				<tr>
-				<td colspan="2">
-				<a href="">
-				<input type="submit" name="details"  class="btn btn-primary btn-block" value="Próximamente"></td>
-				</a>		
-				</tr>
+				
 
 
 				
