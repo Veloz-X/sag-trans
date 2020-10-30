@@ -13,8 +13,7 @@ if(isset($_POST["query"]))
 }
 else
 {
-	$query = "
-	SELECT * FROM $table WHERE `id` = 2 ";
+	echo '<br> Ingrese el # De Documento';
 }
 $result = mysqli_query($conn, $query);
 if(mysqli_num_rows($result) > 0)
@@ -43,6 +42,9 @@ if(mysqli_num_rows($result) > 0)
 				<strong>Estado: </strong><a class="badge badge-success p-1 text-light">Pagado</a>
 				<br>
 				Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD US
+				<br>
+				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;'.$row["nick"].'
+				<br>
 				</font>
 				</td>
 				<tr>
