@@ -13,7 +13,7 @@ $menu = array(
   array(
     'title' => 'Google Play Gift Card',
     'img' => 'https://seagm-media.seagmcdn.com/icon_400/225.jpg',
-    'url' => base_url('/mante'),
+    'url' => base_url('/p/googlep.php'),
   ),
   array(
     'title' => 'iTunes Gift Card',
