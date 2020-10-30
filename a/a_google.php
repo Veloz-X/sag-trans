@@ -29,11 +29,8 @@ if(mysqli_num_rows($result) > 0)
 	{
 		$output .= '
 			<tr>
-
-				<td  >
-				<div align="center"><img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="80" ></div>
-
-				</td>
+ 
+				
 				<td><font  size=2>
 				<strong>Doc. # </strong>'.$row["documento"].'
 				<br>
@@ -43,7 +40,7 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD US
 				<br>
-				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;'.$row["c"].'
+				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">: &nbsp;'.$row["c"].'
 				<br>
 				</font>
 				</td>
