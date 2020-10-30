@@ -43,16 +43,16 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD US
 				<br>
-				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;'.$row["nick"].'
+				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;'.$row["c"].'
 				<br>
 				</font>
 				</td>
 				<tr>
 
 				<td colspan="2">
-				<a href="../admin/dashboard/google/details.php?details='.$row["id"].'">
-				<input type="submit" name="inicio"  class="btn btn-primary btn-block" value="Detalles"></td>
-				</a>	
+				<a href="">
+				<input type="submit" name="details"  class="btn btn-primary btn-block" value="Próximamente"></td>
+				</a>		
 				</tr>
 
 
