@@ -26,6 +26,7 @@ $menu = array(
     'url' => base_url('/mante'),
   ),
 );
+// MENU X CATEGORIA
 $recarga = array(
   array(
     'title' => 'Free Fire',
@@ -65,7 +66,7 @@ $giftcard = array(
     'title' => 'Google Play',
     'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
     'icono'=>'https://seagm-media.seagmcdn.com/icon_400/225.jpg',
-    'url' => base_url('/mante'),
+    'url' => base_url('/p/googlep.php'),
   ),
   array(
     'title' => 'Itunes',
