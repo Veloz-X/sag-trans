@@ -37,14 +37,14 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>Estado: </strong><a class="badge badge-success p-1 text-light">Pagado</a>
 				<br>
-				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20"><strong>:</strong> Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD (US)
+				<img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20">&nbsp;Google Play Gift Card <strong>'.$row["cantidad"].'</strong> USD (US)
 				<br>
 				&nbsp;'.$row["c"].'
-				<div class="input-group mb-3">
+<div class="input-group input-group-sm mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"> <img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20"></span>
+    <span class="input-group-text" id="inputGroup-sizing-sm"><img src="https://seagm-media.seagmcdn.com/icon_400/225.jpg" width="20"></span>
   </div>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 </div>
 				<br>
 				<strong>Nota: </strong>'.$row["nota"].'*
