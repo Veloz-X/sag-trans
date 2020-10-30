@@ -47,10 +47,11 @@ if(mysqli_num_rows($result) > 0)
 	  </div>
 	  <input type="text" value="'.$row["c"].'" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 	</div>
+	<label for="formGroupExampleInput"><strong>Nota: </strong>'.$row["nota"].'* </label>
 	</div>
   
 </form>
-				<strong>Nota: </strong>'.$row["nota"].'*
+				
 				<hr>
 				</font>
 				</td>
