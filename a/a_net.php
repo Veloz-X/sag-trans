@@ -87,7 +87,9 @@ else
 	  <tr>
 		<td class="m_3731599029898677976content-block" style="text-align:center;width:100%" colspan="2">
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Estados de Netflix</span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">1</span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;"><div class="spinner-grow text-dark" role="status">
+		  <span class="sr-only">Loading...</span>
+		</div></span><br>
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">2</span><br>
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">3</span><br>
 		  </td>
