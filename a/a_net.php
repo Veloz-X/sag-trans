@@ -86,7 +86,7 @@ else
 		  </td>
 	  </tr>
 	  <tr>
-		<td class="m_3731599029898677976content-block" style="text-align:center;width:100%" colspan="2">
+		<td class="m_3731599029898677976content-block" style="width:100%" colspan="2">
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; font-weight: bold; color:#000000;">Estados de Netflix</span><br>
 		  
 		  <ul>
