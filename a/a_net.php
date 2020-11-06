@@ -79,7 +79,7 @@ else
 	  <!-- REDES SOCIALES -->
 	  <tr>
 	  <td class="m_3731599029898677976content-block" style="text-align:center;width:100%" colspan="2">
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#000000;">Horario de Servicio de Activación</span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; font-weight: bold; color:#000000;">Horario de Servicio de Activación</span><br>
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Lunes a Viernes</span><br>
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Demora de 1 hora Hasta 12 Horas</span>
 		  </td>
