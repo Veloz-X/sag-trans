@@ -90,8 +90,12 @@ else
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;"><div class="spinner-grow text-dark spinner-grow-sm" role="status">
 		  <span class="sr-only">Loading...</span>
 		</div></span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">2</span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">3</span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;"><div class="spinner-grow text-success spinner-grow-sm" role="status">
+		  <span class="sr-only">Loading...</span>
+		</div></span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;"><div class="spinner-grow text-danger spinner-grow-sm" role="status">
+		  <span class="sr-only">Loading...</span>
+		</div></span><br>
 		  </td>
 	  </tr>
 
