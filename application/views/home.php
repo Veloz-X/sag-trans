@@ -333,7 +333,6 @@ $giftcard = array(
                   </td>
               </tr>
 
-
             </tbody>
           </table>
 

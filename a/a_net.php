@@ -74,6 +74,33 @@ else
 	echo '<br> Documento No existe - Netflix.';
 	echo '<br> Horario de Activacion: de Lunes a Viernes - Tiempo de Activacion de 1 hora hasta 12 Horas.
 	';
+	echo '<table class="table table-striped table-sm">
+	<tbody>
+	  <!-- REDES SOCIALES -->
+	  <tr>
+		<td class="m_3731599029898677976content-block" style="text-align:center;width:100%" colspan="2">
+		  <br>
+		  <a href="https://www.facebook.com/StoreAndGamers/" style="color:transparent;margin-right:5px" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.facebook.com/StoreAndGamers/&amp;source=gmail&amp;ust=1596475002202000&amp;usg=AFQjCNH0GLFST_dKlTqNy5rEESjsQ6PhvQ">
+			<img src="https://ci3.googleusercontent.com/proxy/rP7eQG6dO1i7uuuLcP5NhNewC1yQJSU5gt1r1mFLKzfvVppilfGpLl2GwhOLGgPrGGLmzSlx0gldeWhicYmxcFzZIXJalhAsm3vJAnya9BAGnMT1rmU=s0-d-e1-ft#https://www.storeandgamers.com/assets/img/social-icons/facebook.png" alt="" style="width:28px;height:28px" class="CToWUd">
+		  </a>
+		  <a href="https://www.instagram.com/storeandgamers/" style="color:transparent;margin-right:5px" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.instagram.com/storeandgamers/&amp;source=gmail&amp;ust=1596475002203000&amp;usg=AFQjCNHYnoXlWp_ZbjPVYlztejx07yLsJQ">
+			<img src="https://ci6.googleusercontent.com/proxy/mj1RW4wHTKTt1qqvxr1zDJ1enlDaBoViMEmCC56_5v7Nwxt2Bc3osjFsWUVQ-X-RfLP98bg_x0BgyuVR2Lmf31EJ947h5o6u9k5H1r9ruJEzZJ5S-Xnm=s0-d-e1-ft#https://www.storeandgamers.com/assets/img/social-icons/instagram.png" alt="" style="width:28px;height:28px" class="CToWUd">
+		  </a>
+		  <a href="https://www.youtube.com/channel/UC2VKVJWFSb-JA7uq5A4WLcQ" style="color:transparent;margin-right:5px" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.youtube.com/channel/UC2VKVJWFSb-JA7uq5A4WLcQ&amp;source=gmail&amp;ust=1596475002203000&amp;usg=AFQjCNFJQ4zNeFB-bWpLpOMKIoaHK9EZsg">
+			<img src="https://ci3.googleusercontent.com/proxy/QY-AqKqRB2uqeKqQ6T6Bxrqqhhl5ryqdgd3mtvD_Yj1R9x9iXtThVZBM-qkyL87M1kqCzowY4U_rnKGnMyMuu7rE4N3OVyj6eiOvdLlWqYWDim5s6w=s0-d-e1-ft#https://www.storeandgamers.com/assets/img/social-icons/youtube.png" alt="" style="width:28px;height:28px" class="CToWUd">
+		  </a><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Ecuador, Guayaquil</span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">© 2020 StoreAndGamers All Rights Reserved.</span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">¿Tienes Algún Problema ? <a href="https://www.storeandgamers.com/contact-5">Contactanos</a></span>
+			<br>
+			v.1.5.b
+		  </td>
+	  </tr>
+
+
+	</tbody>
+  </table>
+	';
 	
 }
 
