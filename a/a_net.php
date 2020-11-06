@@ -91,15 +91,15 @@ else
 		  
 		  <ul>
 
-		  <li type="square"> <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">En espera para Activación  <div class="spinner-grow spinner-grow-sm" role="status">
+		  <li type="square"> <span style="text-align:left; font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">En espera para Activación  <div class="spinner-grow spinner-grow-sm" role="status">
 		  <span class="sr-only">Loading...</span>
 		</div></span></li>
 		  
-		  <li type="square"><span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">La Activación esta en proceso <div class="spinner-grow text-warning spinner-grow-sm" role="status">
+		  <li type="square"><span style="text-align:left; font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">La Activación esta en proceso <div class="spinner-grow text-warning spinner-grow-sm" role="status">
 		  <span class="sr-only">Loading...</span>
 		</div></span></li>
-		
-		<li type="square"><span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Cuenta Activada <div class="spinner-grow text-success spinner-grow-sm" role="status">
+
+		<li type="square"><span style="text-align:left; font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Cuenta Activada <div class="spinner-grow text-success spinner-grow-sm" role="status">
 		<span class="sr-only">Loading...</span>
 	  </div></span></li>
 
