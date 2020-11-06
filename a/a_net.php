@@ -78,7 +78,7 @@ else
 	<tbody>
 	  <!-- REDES SOCIALES -->
 	  <tr>
-	  <td class="m_3731599029898677976content-block" style="text-align:center;width:100%" colspan="2">
+	  <td  style="text-align:center;width:100%" >
 		  <br>
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Horario de Servicio de Activación</span><br>
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Lunes a Viernes</span><br>
