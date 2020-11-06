@@ -91,7 +91,7 @@ else
 		  
 		  <ul>
 
-		  <li type="square"> <span style="text-align:left; font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">En espera para Activación  <div class="spinner-grow spinner-grow-sm" role="status">
+		  <li type="square"> <span style="text-align:right; font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">En espera para Activación  <div class="spinner-grow spinner-grow-sm" role="status">
 		  <span class="sr-only">Loading...</span>
 		</div></span></li>
 		  
