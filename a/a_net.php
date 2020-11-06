@@ -72,7 +72,7 @@ if(mysqli_num_rows($result) > 0)
 else
 {
 	echo '<br> Documento No existe - Netflix.';
-	echo '<br> Horario de Activacion: de Lunes a Viernes - Tiempo de Activacion de 1 hora hasta 12 Horas.
+	echo '<br> -
 	';
 	echo '<table class="table table-striped table-sm">
 	<tbody>
@@ -81,9 +81,8 @@ else
 	  <td class="m_3731599029898677976content-block" style="text-align:center;width:100%" colspan="2">
 		  <br>
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Horario de Servicio de Activación</span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">© 2020 StoreAndGamers All Rights Reserved.</span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">¿Tienes Algún Problema ? <a href="https://www.storeandgamers.com/contact-5">Contactanos</a></span>
-		
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Lunes a Viernes</span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Duración: 1 hora Hasta 12 Horas</span>
 		  </td>
 	  </tr>
 	  <tr>
