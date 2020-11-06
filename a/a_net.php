@@ -87,13 +87,13 @@ else
 	  <tr>
 		<td class="m_3731599029898677976content-block" style="text-align:center;width:100%" colspan="2">
 		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Estados de Netflix</span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;"><div class="spinner-grow spinner-grow-sm" role="status">
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">En espera para Activación  <div class="spinner-grow spinner-grow-sm" role="status">
 		  <span class="sr-only">Loading...</span>
 		</div></span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;"><div class="spinner-grow text-warning spinner-grow-sm" role="status">
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">La Activación esta en proceso <div class="spinner-grow text-warning spinner-grow-sm" role="status">
 		  <span class="sr-only">Loading...</span>
 		</div></span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;"><div class="spinner-grow text-success spinner-grow-sm" role="status">
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Cuenta Activada <div class="spinner-grow text-success spinner-grow-sm" role="status">
 		  <span class="sr-only">Loading...</span>
 		</div></span><br>
 		  </td>
