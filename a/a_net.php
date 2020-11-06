@@ -86,11 +86,10 @@ else
 	  </tr>
 	  <tr>
 		<td class="m_3731599029898677976content-block" style="text-align:center;width:100%" colspan="2">
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Ecuador, Guayaquil</span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">© 2020 StoreAndGamers All Rights Reserved.</span><br>
-		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">¿Tienes Algún Problema ? <a href="https://www.storeandgamers.com/contact-5">Contactanos</a></span>
-			<br>
-			v.1.5.b
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Estados de Netflix</span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">1</span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">2</span><br>
+		  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">3</span><br>
 		  </td>
 	  </tr>
 
