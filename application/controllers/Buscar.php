@@ -17,7 +17,7 @@ class Buscar extends CI_Controller {
 		{
 			$query = $this->input->post('query');
 		}
-		$data = $this->ajaxsearch_model->fetch_data($query);
+		$data = $this->buscar_model->fetch_data($query);
 		$output .= '
 		<div class="table-responsive">
 					<table class="table table-bordered table-striped">
