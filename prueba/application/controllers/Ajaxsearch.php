@@ -35,11 +35,11 @@ class Ajaxsearch extends CI_Controller {
 			{
 				$output .= '
 						<tr>
-							<td>'.$row->CustomerName.'</td>
-							<td>'.$row->Address.'</td>
-							<td>'.$row->City.'</td>
-							<td>'.$row->PostalCode.'</td>
-							<td>'.$row->Country.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
 						</tr>
 				';
 			}
