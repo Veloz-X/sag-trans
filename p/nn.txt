@@ -1,0 +1,356 @@
+
+Webslesson
+PHP, MySql, Jquery, AngularJS, Ajax, Codeigniter, Tutorial de Laravel
+
+    Hogar
+    Tutorial
+    Herramientas
+    Demos
+    Sobre nosotros
+    Escribe para nosotros
+    Política de privacidad
+    Términos y Condiciones
+    Contáctame
+
+Búsqueda de datos en vivo en Codeigniter usando Ajax JQuery
+ Webslesson      04:17      ajax CodeIgniter buscar , ajax búsqueda en tiempo real , ajax búsqueda en CodeIgniter , CodeIgniter ajax búsqueda en tiempo real , CodeIgniter de búsqueda AJAX , CodeIgniter búsqueda en tiempo real , búsqueda en tiempo real en CodeIgniter , buscar con ajax      15 comentarios    
+
+Si está buscando un tutorial web sobre cómo buscar datos en vivo en Codeigniter usando Ajax con Jquery, aquí hemos discutido un tema como la búsqueda de datos de tablas Live Mysql usando Ajax JQuery en Codeigniter Framework. Ya hemos publicado un tutorial web sobre la búsqueda de datos en vivo de Ajax utilizando PHP Script con Ajax Jquery. También hemos hecho lo mismo en el marco Codeigniter. Porque si algún desarrollador web utiliza el marco Codeigniter para su desarrollo web, puede seguir este código fuente para la búsqueda de datos en Live Table.
+
+Este es un tutorial de búsqueda de tablas en vivo impulsado por ajax en el que cuando el usuario comienza a escribir algo, puede obtener datos de filtro de acuerdo con la cadena que ha escrito sin actualizar la página web, porque aquí usamos Ajax con Codeigniter. Aquí, la tabla mostrará los datos del filtro en tiempo real cuando cualquier usuario escriba alguna cadena en el cuadro de texto de búsqueda. Esta característica la hemos implementado en Codeigniter con Ajax Jquery.
+
+Ver demostración
+
+
+Si no desea usar Jquery Datatables para mostrar los datos de la tabla Mysql para mostrarlos en formato tabular, puede usar este tipo de código para hacer que la búsqueda de datos en vivo sea una tabla. Para hacer esta tabla de búsqueda de datos en vivo, usamos Ajax Jquery con el marco Codeigniter. A continuación puede encontrar el código fuente completo de este tutorial.
+
+
+
+
+
+Descargar código fuente
+
+
+
+Código fuente
+
+Ajaxsearch.php - Controladores
+
+
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Ajaxsearch extends CI_Controller {
+
+ function index()
+ {
+  $this->load->view('ajaxsearch');
+ }
+
+ function fetch()
+ {
+  $output = '';
+  $query = '';
+  $this->load->model('ajaxsearch_model');
+  if($this->input->post('query'))
+  {
+   $query = $this->input->post('query');
+  }
+  $data = $this->ajaxsearch_model->fetch_data($query);
+  $output .= '
+  <div class="table-responsive">
+     <table class="table table-bordered table-striped">
+      <tr>
+       <th>Customer Name</th>
+       <th>Address</th>
+       <th>City</th>
+       <th>Postal Code</th>
+       <th>Country</th>
+      </tr>
+  ';
+  if($data->num_rows() > 0)
+  {
+   foreach($data->result() as $row)
+   {
+    $output .= '
+      <tr>
+       <td>'.$row->CustomerName.'</td>
+       <td>'.$row->Address.'</td>
+       <td>'.$row->City.'</td>
+       <td>'.$row->PostalCode.'</td>
+       <td>'.$row->Country.'</td>
+      </tr>
+    ';
+   }
+  }
+  else
+  {
+   $output .= '<tr>
+       <td colspan="5">No Data Found</td>
+      </tr>';
+  }
+  $output .= '</table>';
+  echo $output;
+ }
+ 
+}
+
+
+
+Ajaxsearch_model.php - Modelos
+
+
+<?php
+class Ajaxsearch_model extends CI_Model
+{
+ function fetch_data($query)
+ {
+  $this->db->select("*");
+  $this->db->from("tbl_customer");
+  if($query != '')
+  {
+   $this->db->like('CustomerName', $query);
+   $this->db->or_like('Address', $query);
+   $this->db->or_like('City', $query);
+   $this->db->or_like('PostalCode', $query);
+   $this->db->or_like('Country', $query);
+  }
+  $this->db->order_by('CustomerID', 'DESC');
+  return $this->db->get();
+ }
+}
+?>
+
+
+ajaxsearch.php - Vistas
+
+
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Live Data Search in Codeigniter using Ajax JQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+ </head>
+ <body>
+  <div class="container">
+   <br />
+   <br />
+   <br />
+   <h2 align="center">Live Data Search in Codeigniter using Ajax JQuery</h2><br />
+   <div class="form-group">
+    <div class="input-group">
+     <span class="input-group-addon">Search</span>
+     <input type="text" name="search_text" id="search_text" placeholder="Search by Customer Details" class="form-control" />
+    </div>
+   </div>
+   <br />
+   <div id="result"></div>
+  </div>
+  <div style="clear:both"></div>
+  <br />
+  <br />
+  <br />
+  <br />
+ </body>
+</html>
+
+
+<script>
+$(document).ready(function(){
+
+ load_data();
+
+ function load_data(query)
+ {
+  $.ajax({
+   url:"<?php echo base_url(); ?>ajaxsearch/fetch",
+   method:"POST",
+   data:{query:query},
+   success:function(data){
+    $('#result').html(data);
+   }
+  })
+ }
+
+ $('#search_text').keyup(function(){
+  var search = $(this).val();
+  if(search != '')
+  {
+   load_data(search);
+  }
+  else
+  {
+   load_data();
+  }
+ });
+});
+</script>
+
+
+Base de datos
+
+
+--
+-- Database: `testing`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_customer`
+--
+
+CREATE TABLE `tbl_customer` (
+  `CustomerID` int(11) NOT NULL,
+  `CustomerName` varchar(250) NOT NULL,
+  `Address` text NOT NULL,
+  `City` varchar(250) NOT NULL,
+  `PostalCode` varchar(30) NOT NULL,
+  `Country` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_customer`
+--
+
+INSERT INTO `tbl_customer` (`CustomerID`, `CustomerName`, `Address`, `City`, `PostalCode`, `Country`) VALUES
+(1, 'Maria Anders', 'Obere Str. 57', 'Berlin', '12209', 'Germany'),
+(2, 'Ana Trujillo', 'Avda. de la Construction 2222', 'Mexico D.F.', '5021', 'Mexico'),
+(3, 'Antonio Moreno', 'Mataderos 2312', 'Mexico D.F.', '5023', 'Mexico'),
+(4, 'Thomas Hardy', '120 Hanover Sq.', 'London', 'WA1 1DP', 'UK'),
+(5, 'Paula Parente', 'Rua do Mercado, 12', 'Resende', '08737-363', 'Brazil'),
+(6, 'Wolski Zbyszek', 'ul. Filtrowa 68', 'Walla', '01-012', 'Poland'),
+(7, 'Matti Karttunen', 'Keskuskatu 45', 'Helsinki', '21240', 'Finland'),
+(8, 'Karl Jablonski', '305 - 14th Ave. S. Suite 3B', 'Seattle', '98128', 'USA'),
+(9, 'Paula Parente', 'Rua do Mercado, 12', 'Resende', '08737-363', 'Brazil'),
+(10, 'Pirkko Koskitalo', 'Torikatu 38', 'Oulu', '90110', 'Finland'),
+(11, 'Ronald Bowne', '2343 Shadowmar Drive', 'New Orleans', '70112', 'United States'),
+(12, 'Joyce Rosenberry', 'Norra Esplanaden 56', 'HELSINKI', '00380', 'Finland'),
+(13, 'Jeff Putnam', 'Industrieweg 56', 'Bouvignies', '7803', 'Belgium'),
+(14, 'Trina Davidson', '1049 Lockhart Drive', 'Barrie', 'ON L4M 3B1', 'Canada');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tbl_customer`
+--
+ALTER TABLE `tbl_customer`
+  ADD PRIMARY KEY (`CustomerID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_customer`
+--
+ALTER TABLE `tbl_customer`
+  MODIFY `CustomerID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+    Compartir este:
+    Facebook
+    Gorjeo
+    Google+
+    Tropezón
+    Digg
+
+Envíe por correo electrónico este blog Compartir en Twitter Compartir en Facebook
+Artículos Relacionados:
+
+    Búsqueda de datos en vivo en Codeigniter usando Ajax JQuery Si está buscando un tutorial web sobre cómo buscar datos en vivo en Codeigniter mediante el uso de Ajax con Jquery, aquí hemos discutido algo sobre el tema ... Leer más. 
+
+Newer Post Older Post Home
+15 comments:
+
+    Unknown5 April 2018 at 03:05
+
+    hello,
+
+    your above code is not working. please tell me solution. i am new one in codeignitor.
+    Reply
+    Joblackpoc31 August 2018 at 02:02
+
+    Thank you very much
+    Reply
+    Unknown24 September 2018 at 02:07
+
+    Awesome!
+    Reply
+    Unknown16 November 2018 at 23:57
+
+    i try this code, but when search not working
+    Reply
+    Heavy equipment30 November 2018 at 01:38
+
+    How to create dynamic search in codeigniter website for this website https://www.heavyequipments.in
+    Reply
+    Sumit Kumar Gupta14 January 2019 at 10:41
+
+    Thanks man. This code is very helpful for me.
+    Reply
+    Unknown15 January 2019 at 09:16
+
+    please let me know if i have a database with the name "internet" and table is "customers" but according to your code you just added the table name but didn't add the db name. why?
+
+    i have already created a data table which is showing all customer records. please let me know what should i have to add in my data table code.
+
+    Many Thanks.
+    Reply
+    Replies
+        Victor Dominic30 January 2019 at 13:21
+
+        database is set in your codeigniter config file
+        Reply
+    Freemovie15 March 2019 at 00:54
+
+    If the code doen't work pls add this code under controller->fectch()
+
+    $this->load->database();
+    Reply
+    Amos NDAYISHIMIYE25 April 2019 at 14:58
+
+    thx very much
+    Reply
+    intramuralWeb.ga20 September 2019 at 00:49
+
+    forbidden... ??
+    Reply
+    Software Company in Latifabad 28 February 2020 at 03:16
+
+    kk
+    Reply
+    Unknown17 February 2020 at 04:53
+
+    fetch method not found error
+    Reply
+    Unknown9 August 2020 at 23:50
+
+    not show data no error
+    Reply
+    Waleed Barakat30 August 2020 at 16:11
+
+    Awesome, Works like a charm, very smart and easy to configure. Thank you :)
+    Reply
+
+    Webslesson 
+
+Siga @webslesson
+entradas populares
+
+    Proyecto PHP en el sistema de gestión de visitantes usando Ajax jQuery Mysql
+    Sistema de chat en vivo en PHP usando Ajax JQuery
+    Cómo deshabilitar Habilitar el inicio de sesión de usuario con PHP usando Ajax
+    Sistema de asistencia de estudiantes en línea en PHP Mysql
+    Proyecto de sistema de examen en línea basado en PHP MySql
+    Cómo iniciar sesión con una cuenta de Google usando PHP
+    Cómo hacer un filtro de producto en php usando Ajax
+    Carrito de compras PHP Mysql simple
+    Registro de inicio de sesión PHP con verificación de correo electrónico mediante OTP
+    Agregue / elimine dinámicamente campos de entrada en PHP con Jquery Ajax
+
+Buscar:
+Copyright © 2020 Webslesson
