@@ -344,7 +344,7 @@ $giftcard = array(
                         <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
                       </div>
                       <div class="col-auto">
-                      <img class="p-1" src="https://www.storeandgamers.com/uploads/logo/logo_5ed1c11998a10.png" width="150">
+                      <img class="p-1" src="https://seagm-media.seagmcdn.com/special_deals/card/595.jpg" width="72">
                         <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
                       </div>
                     </div>
