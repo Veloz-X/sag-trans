@@ -110,12 +110,10 @@ $giftcard = array(
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -338,16 +336,16 @@ $giftcard = array(
                 <div class="card border-left-warning shadow h-100 py-2">
                   <div class="card-body">
                     <div class="row no-gutters align-items-center">
-                    <div class="col-auto">
-                      <img class="p-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png" width="72" height="72">
+                      <div class="col-auto">
+                        <img class="p-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png" width="72" height="72">
                         <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
                       </div>
                       <div class="col mr-2">
-                        <div>
-                          Netflix</div>
+                        <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Netflix</h5><br>
+
                         <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">18</div> -->
                       </div>
-                      
+
                     </div>
                   </div>
                 </div>
