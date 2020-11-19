@@ -16,10 +16,7 @@ class Buscar extends CI_Controller {
 		if($this->input->post('query'))
 		{
 			$query = $this->input->post('query');
-		}else {
-			echo '<br> Ingrese el # De Documento';
-		}
-		$data = $this->buscar_model->fetch_data($query);
+			$data = $this->buscar_model->fetch_data($query);
 		$output .= '
 		<div class="table-responsive">
 					<table class="table table-bordered table-striped">
@@ -31,7 +28,7 @@ class Buscar extends CI_Controller {
 							<th>Country</th>
 						</tr>
 		';
-		if($data->num_rows() > 1)
+		if($data->num_rows() > 0)
 		{
 			foreach($data->result() as $row)
 			{
@@ -54,6 +51,10 @@ class Buscar extends CI_Controller {
 		}
 		$output .= '</table>';
 		echo $output;
+		}else {
+			echo '<br> Ingrese el # De Documento';
+		}
+		
 	}
 	
 }
