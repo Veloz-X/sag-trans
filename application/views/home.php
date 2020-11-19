@@ -168,12 +168,6 @@ $giftcard = array(
 
             <?php endforeach; ?>
 
-            <hr>
-            <!-- PUBG MOBILE -->
-
-
-
-
           </div>
 
           <!-- FIN PRODUCTO  -->
