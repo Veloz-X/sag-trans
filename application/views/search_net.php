@@ -1,35 +1,58 @@
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Live Data Search in Codeigniter using Ajax JQuery</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div class="container">
-			<br />
-			<br />
-			<br />
-			<h2 align="center">Live Data Search in Codeigniter using Ajax JQuery</h2><br />
-			<div class="form-group">
-				<div class="input-group">
-					<span class="input-group-addon">Search</span>
-					<input type="text" name="search_text" id="search_text" placeholder="Search by Customer Details" class="form-control" />
-				</div>
-			</div>
-			<br />
-			<div id="result"></div>
+<?php 
+include '../bd/config.php';
+include '../a/action.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Netflix</title>
+	<link rel="stylesheet" href="css/free.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<!-- Brand -->
+		<div>
+			<a href="../index.php">
+				<img class="p-1" src="https://www.storeandgamers.com/uploads/logo/logo_5ed1c11998a10.png" width="150">
+			</a>
 		</div>
-		<div style="clear:both"></div>
-		<br />
-		<br />
-		<br />
-		<br />
-	</body>
+
+
+
+	</nav>
+
+	<div class="container">
+		<div class="input-group ">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="basic-addon1">#</span>
+			</div>
+			<input type="text" name="search_text" id="search_text" placeholder="Search by Customer Details" class="form-control" />
+			&nbsp;
+			
+			
+		</div>
+		<div id="result"></div>
+	</div>
+	<div style="clear:both"></div>
+	</div>
+</body>
+
 </html>
-
-
 <script>
 $(document).ready(function(){
 
