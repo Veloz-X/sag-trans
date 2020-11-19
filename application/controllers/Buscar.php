@@ -35,11 +35,11 @@ class Buscar extends CI_Controller {
 			{
 				$output .= '
 						<tr>
-							<td>'.$row->documento.'</td>
-							<td>'.$row->documento.'</td>
-							<td>'.$row->documento.'</td>
-							<td>'.$row->documento.'</td>
-							<td>'.$row->documento.'</td>
+							<td>'.$row->fecha.'</td>
+							<td>'.$row->fecha.'</td>
+							<td>'.$row->fecha.'</td>
+							<td>'.$row->fecha.'</td>
+							<td>'.$row->fecha.'</td>
 						</tr>
 				';
 			}

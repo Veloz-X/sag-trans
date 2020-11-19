@@ -7,13 +7,13 @@ class Buscar_model extends CI_Model
 		$this->db->from("t_net");
 		if($query != '')
 		{
-			$this->db->like('documento', $query);
+			$this->db->like('fecha', $query);
 			$this->db->or_like('fecha', $query);
-			$this->db->or_like('fecha_i', $query);
-			$this->db->or_like('fecha_f', $query);
-			$this->db->or_like('correo', $query);
+			$this->db->or_like('fecha', $query);
+			$this->db->or_like('fecha', $query);
+			$this->db->or_like('fecha', $query);
 		}
-		$this->db->order_by('CustomerID', 'DESC');
+		$this->db->order_by('fecha', 'DESC');
 		return $this->db->get();
 	}
 }
