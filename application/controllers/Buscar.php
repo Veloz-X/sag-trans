@@ -31,7 +31,7 @@ class Buscar extends CI_Controller {
 							<th>Country</th>
 						</tr>
 		';
-		if($data->num_rows() > 0)
+		if($data->num_rows() > 1)
 		{
 			foreach($data->result() as $row)
 			{
