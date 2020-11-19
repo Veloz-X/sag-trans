@@ -260,7 +260,7 @@ $giftcard = array(
 
           
           <div class="row row-cols-1 row-cols-1">
-          div class="row">
+          <div class="row">
 
 <!-- Earnings (Monthly) Card Example -->
 <div class="col-xl-3 col-md-6 mb-4">
@@ -345,7 +345,6 @@ $giftcard = array(
     </div>
 </div>
 </div>
-
 <?php foreach ($servicio as $item) : ?>
   <!-- gg -->
   <a href="<?= $item['url'] ?>" class="text-decoration:none">
