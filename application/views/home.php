@@ -343,7 +343,7 @@ $giftcard = array(
                         <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
                       </div>
                       <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <div>
                           Netflix</div>
                         <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">18</div> -->
                       </div>
