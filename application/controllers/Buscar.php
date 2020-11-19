@@ -16,6 +16,8 @@ class Buscar extends CI_Controller {
 		if($this->input->post('query'))
 		{
 			$query = $this->input->post('query');
+		}else {
+			echo '<br> Ingrese el # De Documento';
 		}
 		$data = $this->buscar_model->fetch_data($query);
 		$output .= '
