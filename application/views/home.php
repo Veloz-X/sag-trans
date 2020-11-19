@@ -117,34 +117,7 @@ $giftcard = array(
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Brand -->
-    <a href="index.php">
-      <img class="p-1" src="https://www.storeandgamers.com/uploads/logo/logo_5ed1c11998a10.png" width="150">
-    </a>
-
-
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-
-      <ul class="navbar-nav">
-        <?php foreach ($menu as $item) : ?>
-          <li class="nav-item">
-            <a href="<?= $item['url'] ?>" class="nav-link">
-              <img src="<?= $item['img'] ?>" width="20"> <?= $item['title'] ?>
-            </a>
-          </li>
-
-        <?php endforeach; ?>
-      </ul>
-    </div>
-  </nav>
+  
   <!-- FIN DE NAV  -->
 
 
