@@ -268,119 +268,131 @@ $giftcard = array(
           <div class="row row-cols-1 row-cols-1">
             <div class="row">
 
-              <!-- Earnings (Monthly) Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
+            <div class="container-fluid">
+
+<div class="row">
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                          Earnings (Monthly)</div>
+                            Earnings (Monthly)</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                      </div>
-                      <div class="col-auto">
+                    </div>
+                    <div class="col-auto">
                         <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
+        </div>
+    </div>
 
-              <!-- Earnings (Monthly) Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-success shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                          Earnings (Annual)</div>
+                            Earnings (Annual)</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                      </div>
-                      <div class="col-auto">
-                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                      </div>
                     </div>
-                  </div>
+                    <div class="col-auto">
+                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
                 </div>
-              </div>
+            </div>
+        </div>
+    </div>
 
-              <!-- Earnings (Monthly) Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-info shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
                         </div>
                         <div class="row no-gutters align-items-center">
-                          <div class="col-auto">
-                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                          </div>
-                          <div class="col">
-                            <div class="progress progress-sm mr-2">
-                              <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="col-auto">
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
                             </div>
-                          </div>
+                            <div class="col">
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-info" role="progressbar"
+                                        style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-auto">
+                    </div>
+                    <div class="col-auto">
                         <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pending Requests Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Pending Requests</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-comments fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+
+              <?php foreach ($servicio as $item) : ?>
+                <!-- gg -->
+                <a href="<?= $item['url'] ?>" class="text-decoration:none">
+                  <div class=" col-sm-3">
+                    <div class="card text-left">
+                      <img style="border-radius: 8px;" width="370" height="120" src="<?= $item['img'] ?>">
+                      <div class="card-img-overlay ">
+                        <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+                        <h5 style=" float:left;  ">&nbsp;</h5><br>
+                        <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold">&nbsp; Free Fire Diamantes</h5><br> -->
+                        <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
+                        <h5 style="float:left; ">&nbsp;</h5>
                       </div>
+
                     </div>
                   </div>
-                </div>
-              </div>
+                </a>
 
-              <!-- Pending Requests Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-warning shadow h-100 py-2">
-                <!-- <img style="border-radius: 0px;" width="370" height="120"  src="https://seagm-media.seagmcdn.com/icon_400/189.jpg"> -->
-                  <div class="card-body">
-                  
-                    <div class="card-img-overlay row no-gutters align-items-center">
-                      <div class="col-auto">
-                        <img class="p-1" src="https://seagm-media.seagmcdn.com/icon_400/189.jpg" width="72" height="72">
-                        <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
+              <?php endforeach; ?>
 
-                      </div>
-                      <div class="col mr-2">
-                        <h5 style="float:left; color:#000000" class="card-title font-weight-bold ">&nbsp; Netflix</h5><br>
+              <hr>
 
-                        <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">18</div> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+
+
             </div>
 
 
-            <?php foreach ($servicio as $item) : ?>
-              <!-- gg -->
-              <a href="<?= $item['url'] ?>" class="text-decoration:none">
-                <div class=" col-sm-3">
-                  <div class="card text-left">
-                    <img style="border-radius: 8px;" width="370" height="120" src="<?= $item['img'] ?>">
-                    <div class="card-img-overlay ">
-                      <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
-                      <h5 style=" float:left;  ">&nbsp;</h5><br>
-                      <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold">&nbsp; Free Fire Diamantes</h5><br> -->
-                      <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
-                      <h5 style="float:left; ">&nbsp;</h5>
-                    </div>
-
-                  </div>
-                </div>
-              </a>
-
-            <?php endforeach; ?>
-
-            <hr>
-
-
-
-
           </div>
+
 
 
         </div>
@@ -388,11 +400,7 @@ $giftcard = array(
 
 
       </div>
-
-
-
     </div>
-  </div>
   </div>
   </div>
   <!-- FIN DE PERUEBA -->
