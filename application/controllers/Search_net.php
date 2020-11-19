@@ -12,11 +12,11 @@ class Search_net extends CI_Controller {
 	{
 		$output = '';
 		$query = '';
-		$this->load->model('buscar_model');
+		$this->load->model('search_net_model');
 		if($this->input->post('query'))
 		{
 			$query = $this->input->post('query');
-			$data = $this->buscar_model->fetch_data($query);
+			$data = $this->search_net_model->fetch_data($query);
 		$output .= '
 		<div class="table-responsive">
 					<table class="table table-bordered table-striped">
@@ -34,11 +34,11 @@ class Search_net extends CI_Controller {
 			{
 				$output .= '
 						<tr>
-							<td>'.$row->fecha.'</td>
-							<td>'.$row->fecha.'</td>
-							<td>'.$row->fecha.'</td>
-							<td>'.$row->fecha.'</td>
-							<td>'.$row->fecha.'</td>
+							<td>'.$row->fecha_i.'</td>
+							<td>'.$row->fecha_i.'</td>
+							<td>'.$row->fecha_i.'</td>
+							<td>'.$row->fecha_i.'</td>
+							<td>'.$row->fecha_i.'</td>
 						</tr>
 				';
 			}
