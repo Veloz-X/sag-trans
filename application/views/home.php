@@ -110,12 +110,10 @@ $giftcard = array(
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -344,7 +342,7 @@ $giftcard = array(
                         <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
                       </div>
                       <div class="col-auto">
-                      <img class="p-1" src="https://www.storeandgamers.com/uploads/logo/logo_5ed1c11998a10.png" width="150">
+                        <img class="p-1" src="https://www.storeandgamers.com/uploads/logo/logo_5ed1c11998a10.png" width="150">
                         <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
                       </div>
                     </div>
@@ -357,21 +355,23 @@ $giftcard = array(
             <?php foreach ($servicio as $item) : ?>
               <!-- gg -->
               <div class="col-xl-3 col-md-6 mb-4">
-              <a href="<?= $item['url'] ?>" class="text-decoration:none">
-                <div class=" col-sm-3">
-                  <div class="card text-left">
-                    <img style="border-radius: 8px;" width="370" height="120" src="<?= $item['img'] ?>">
-                    <div class="card-img-overlay ">
-                      <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
-                      <h5 style=" float:left;  ">&nbsp;</h5><br>
-                      <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
-                      <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
-                      <h5 style="float:left; ">&nbsp;</h5>
-                    </div>
+                <div class="card border-left-warning shadow h-100 py-2">
+                  <a href="<?= $item['url'] ?>" class="text-decoration:none">
+                    <div class=" col-sm-3">
+                      <div class="card text-left">
+                        <img style="border-radius: 8px;" width="370" height="120" src="<?= $item['img'] ?>">
+                        <div class="card-img-overlay ">
+                          <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+                          <h5 style=" float:left;  ">&nbsp;</h5><br>
+                          <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
+                          <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
+                          <h5 style="float:left; ">&nbsp;</h5>
+                        </div>
 
-                  </div>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
               </div>
 
             <?php endforeach; ?>
