@@ -341,7 +341,7 @@ $giftcard = array(
                         <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
                       </div>
                       <div class="col mr-2">
-                        <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Netflix</h5><br>
+                        <h5 style="float:left; color:#000000" class="card-title font-weight-bold ">&nbsp; Netflix</h5><br>
 
                         <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">18</div> -->
                       </div>
@@ -362,7 +362,7 @@ $giftcard = array(
                     <div class="card-img-overlay ">
                       <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
                       <h5 style=" float:left;  ">&nbsp;</h5><br>
-                      <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
+                      <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold">&nbsp; Free Fire Diamantes</h5><br> -->
                       <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
                       <h5 style="float:left; ">&nbsp;</h5>
                     </div>
