@@ -123,18 +123,7 @@ $giftcard = array(
       <img class="p-1" src="https://www.storeandgamers.com/uploads/logo/logo_5ed1c11998a10.png" width="150">
     </a>
 
-
-    <!-- Toggler/collapsibe Button -->
-    
     </nav>
-  <!-- FIN DE NAV  -->
-
-
-
-  <!-- ANUNCIO -->
-
-
-  <!-- FIN DE ANUNCIO -->
 
   <!-- INICIO DE PRUEBA -->
   <div class="accordion" id="accordionExample">
@@ -229,7 +218,6 @@ $giftcard = array(
                 </a>
               </div>
             <?php endforeach; ?>
-            <hr>
 
 
 
@@ -290,7 +278,6 @@ $giftcard = array(
             </div>
 
 
-            <hr>
 
 
           </div>
