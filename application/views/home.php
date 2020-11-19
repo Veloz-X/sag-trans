@@ -334,7 +334,7 @@ $giftcard = array(
               <!-- Pending Requests Card Example -->
               <div class="col-xl-3 col-md-6 mb-4">
                 <div class="card border-left-warning shadow h-100 py-2 text-left">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png">
+                <img style="border-radius: 8px;" width="370" height="120"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png">
                   <div class="card-body text-left">
                   <img style="border-radius: 8px;" width="370" height="120" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png">
                     <div class="card-img-overlay row no-gutters align-items-center">
