@@ -1,7 +1,4 @@
-<?php 
-include '../bd/config.php';
-include '../a/action.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +6,6 @@ include '../a/action.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Netflix</title>
-	<link rel="stylesheet" href="css/free.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
@@ -41,7 +37,7 @@ include '../a/action.php';
 			<div class="input-group-prepend">
 				<span class="input-group-text" id="basic-addon1">#</span>
 			</div>
-			<input type="text" name="search_text" id="search_text" placeholder="Search by Customer Details" class="form-control" />
+			<input type="text" name="search_text" id="search_text" placeholder="Documento" class="form-control" />
 			&nbsp;
 			
 			
