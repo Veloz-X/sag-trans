@@ -63,7 +63,7 @@ $(document).ready(function(){
 			success:function(data){
 				$('#result').html(data);
 			}
-		})
+		});
 	}
 
 	$('#search_text').keyup(function(){
