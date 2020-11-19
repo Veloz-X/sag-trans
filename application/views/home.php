@@ -117,7 +117,16 @@ $giftcard = array(
 </head>
 
 <body>
-  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Brand -->
+    <a href="index.php">
+      <img class="p-1" src="https://www.storeandgamers.com/uploads/logo/logo_5ed1c11998a10.png" width="150">
+    </a>
+
+
+    <!-- Toggler/collapsibe Button -->
+    
+    </nav>
   <!-- FIN DE NAV  -->
 
 
