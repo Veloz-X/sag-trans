@@ -334,7 +334,7 @@ $giftcard = array(
               <!-- Pending Requests Card Example -->
               <div class="col-xl-3 col-md-6 mb-4">
                 <div class="card border-left-warning shadow h-100 py-2 text-left">
-                <img style="border-radius: 0px;" width="370" height="120"  src="https://seagm-media.seagmcdn.com/icon_400/189.jpg">
+                <!-- <img style="border-radius: 0px;" width="370" height="120"  src="https://seagm-media.seagmcdn.com/icon_400/189.jpg"> -->
                   <div class="card-body text-left">
                   
                     <div class="card-img-overlay row no-gutters align-items-center">
