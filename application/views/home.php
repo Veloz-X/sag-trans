@@ -340,6 +340,7 @@ $giftcard = array(
                       <div class="col-auto">
                         <img class="p-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png" width="72" height="72">
                         <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
+                        
                       </div>
                       <div class="col mr-2">
                         <h5 style="float:left; color:#000000" class="card-title font-weight-bold ">&nbsp; Netflix</h5><br>
