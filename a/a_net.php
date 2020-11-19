@@ -72,8 +72,7 @@ if(mysqli_num_rows($result) > 0)
 else
 {
 	echo '<br> Documento No existe - Netflix.';
-	echo '<br> -
-	';
+	echo '<br>';
 	echo '<table class="table table-striped table-sm">
 	<tbody>
 	  <!-- REDES SOCIALES -->
