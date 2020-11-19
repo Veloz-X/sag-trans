@@ -35,10 +35,10 @@ class Search_net extends CI_Controller {
 				$output .= '
 						<tr>
 							<td>'.$row->documento.'</td>
-							<td>'.$row->fecha_i.'</td>
-							<td>'.$row->fecha_f.'</td>
-							<td>'.$row->correo.'</td>
-							<td>'.$row->contra.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
 						</tr>
 				';
 			}
