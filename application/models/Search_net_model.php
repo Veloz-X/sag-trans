@@ -7,15 +7,15 @@ class Search_net_model extends CI_Model
 		$this->db->from("t_net");
 		$this->db->where("documento");
 		$this->db->like("documento");
-		// if($query != '')
-		// {
-		// 	$this->db->like('documento', $query);
-		// 	$this->db->or_like('documento', $query);
-		// 	$this->db->or_like('documento', $query);
-		// 	$this->db->or_like('documento', $query);
-		// 	$this->db->or_like('documento', $query);
-		// 	$this->db->or_like('documento', $query);
-		// }
+		if($query != '')
+		{
+			$this->db->like('documento', $query);
+			$this->db->or_like('documento', $query);
+			$this->db->or_like('documento', $query);
+			$this->db->or_like('documento', $query);
+			$this->db->or_like('documento', $query);
+			$this->db->or_like('documento', $query);
+		}
 		$this->db->order_by('documento', 'DESC');
 		return $this->db->get();
 	}
