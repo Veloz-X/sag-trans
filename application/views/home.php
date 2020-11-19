@@ -280,7 +280,7 @@ $giftcard = array(
                           Earnings (Monthly)</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                       </div>
-                      <div class="col-auto">
+                      <div class="col-auto shadow">
                       <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
                       </div>
                     </div>
