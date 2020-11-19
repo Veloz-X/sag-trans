@@ -368,7 +368,6 @@ $giftcard = array(
                           <h5 style="float:left; ">&nbsp;</h5>
                         </div>
 
-                      </div>
                     </div>
                   </a>
                 </div>
