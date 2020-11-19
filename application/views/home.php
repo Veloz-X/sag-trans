@@ -279,9 +279,9 @@ $giftcard = array(
                           <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
                         </div>
                         <div class="col mr-2">
-                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $item['title'] ?></div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">&nbsp;<?= $item['title'] ?></div>
                           <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Revisa tu Orden</div>
+                          &nbsp;Revisa tu Orden</div>
 
                         </div>
 
