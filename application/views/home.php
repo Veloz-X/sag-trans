@@ -271,65 +271,62 @@ $giftcard = array(
               <!-- Earnings (Monthly) Card Example -->
               <?php foreach ($servicio as $item) : ?>
 
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-success shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                      <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $item['title'] ?></div>
-                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                          Revisa tu Orden</div>
-                        
-                      </div>
-                      <div class="col-auto shadow">
-                      <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto shadow">
+                          <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+                        </div>
+                        <div class="col mr-2">
+                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $item['title'] ?></div>
+                          <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Revisa tu Orden</div>
+
+                        </div>
+
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
               <?php endforeach; ?>
 
-              
+
 
               <!-- Pending Requests Card Example -->
-              
+
             </div>
 
 
             <?php foreach ($servicio as $item) : ?>
               <!-- gg -->
               <div class="col-xl-3 col-md-6 mb-4">
-                
-                  <a href="<?= $item['url'] ?>" class="text-decoration:none">
-                    <div class=" col-sm-3">
-                      <div class="card text-left">
-                        <img style="border-radius: 8px;" width="370" height="120" src="<?= $item['img'] ?>">
-                        <div class="card-img-overlay ">
-                          <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
-                          <h5 style=" float:left;  ">&nbsp;</h5><br>
-                          <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
-                          <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
-                          <h5 style="float:left; ">&nbsp;</h5>
-                        </div>
+
+                <a href="<?= $item['url'] ?>" class="text-decoration:none">
+                  <div class=" col-sm-3">
+                    <div class="card text-left">
+                      <img style="border-radius: 8px;" width="370" height="120" src="<?= $item['img'] ?>">
+                      <div class="card-img-overlay ">
+                        <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+                        <h5 style=" float:left;  ">&nbsp;</h5><br>
+                        <!-- <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; Free Fire Diamantes</h5><br> -->
+                        <h5 style="float:left; color:#FFFFFF" class="card-title font-weight-bold ">&nbsp; <?= $item['title'] ?></h5><br>
+                        <h5 style="float:left; ">&nbsp;</h5>
+                      </div>
 
                     </div>
-                  </a>
-                </div>
+                </a>
               </div>
-
-            <?php endforeach; ?>
-
-            <hr>
-
-
-
-
           </div>
+
+        <?php endforeach; ?>
+
+        <hr>
+
+
 
 
         </div>
-
 
 
       </div>
@@ -337,6 +334,10 @@ $giftcard = array(
 
 
     </div>
+
+
+
+  </div>
   </div>
   </div>
   </div>
