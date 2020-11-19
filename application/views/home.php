@@ -336,7 +336,7 @@ $giftcard = array(
                 <div class="card border-left-warning shadow h-100 py-2">
                   <div class="card-body text-left">
                   <img style="border-radius: 8px;" width="370" height="120" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png">
-                    <div class="row no-gutters align-items-center">
+                    <div class="card-img-overlay row no-gutters align-items-center">
                       <div class="col-auto">
                         <img class="p-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png" width="72" height="72">
                         <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
