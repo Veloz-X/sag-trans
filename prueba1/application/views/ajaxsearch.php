@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 		<title>Live Data Search in Codeigniter using Ajax JQuery</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -38,10 +39,11 @@ $(document).ready(function(){
 	function load_data(query)
 	{
 		$.ajax({
-			url:"<?php echo base_url(); ?>ajaxsearch/fetch",
+			url:"https://trans.storeandgamers.com/prueba1/ajaxsearch/fetch",
 			method:"POST",
 			data:{query:query},
 			success:function(data){
+				window.location.href = "https://trans.storeandgamers.com/prueba1/ajaxsearch/fetch";
 				$('#result').html(data);
 			}
 		})
