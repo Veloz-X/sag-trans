@@ -355,7 +355,7 @@ $giftcard = array(
             <?php foreach ($servicio as $item) : ?>
               <!-- gg -->
               <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-warning shadow h-100 py-2">
+                
                   <a href="<?= $item['url'] ?>" class="text-decoration:none">
                     <div class=" col-sm-3">
                       <div class="card text-left">
