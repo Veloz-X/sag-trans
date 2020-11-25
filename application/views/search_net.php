@@ -50,6 +50,10 @@
 
 
 	<h1>Hola Mundo</h1>
+	<?php foreach ($store as $search_net) {?>
+		<?php echo  $search_net->id ?>
+		<?php echo  $search_net->id ?>
+		<?php} ?>
 </body>
 
 </html>
