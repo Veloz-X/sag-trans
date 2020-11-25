@@ -10,8 +10,8 @@ class Search_net_model extends CI_Model
 		if($query != '')
 		{
 			// $this->db->like('documento', $query, 'after');
-			$this->db->like('documento', $query);
-			$this->db->or_like('documento', $query);
+			$this->db->like('documento', $query,'after');
+			$this->db->or_like('documento', $query,'after');
 		// 	$this->db->or_like('documento', $query);
 		// 	$this->db->or_like('documento', $query);
 		// 	$this->db->or_like('documento', $query);
