@@ -36,7 +36,7 @@ if(mysqli_num_rows($result) > 0)
 
 				<td><font  size=2>
 				<strong>Doc. # </strong>'.$row["documento"].'<span
-				class="float-right">Estado: &nbsp; &nbsp;<div class="float-right spinner-grow spinner-grow-sm '.$row["estado"].'" role="status">
+				class="float-right"><span>Loading...</span><div class="float-right spinner-grow spinner-grow-sm '.$row["estado"].'" role="status">
 					<span class="sr-only">Loading...</span>
 				  </div></h4></span>
 			  </small>
