@@ -35,10 +35,10 @@ if(mysqli_num_rows($result) > 0)
 
 
 				<td><font  size=2>
-				<strong>Doc. # </strong>'.$row["documento"].'<small class="text-muted">
-				
-				<div class="float-right spinner-grow spinner-grow-sm '.$row["estado"].'" role="status">
-				  <span class=" sr-only">Loading...</span>
+				<strong>Doc. # </strong>'.$row["documento"].'&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<small class="text-muted">
+				&nbsp; Pagado &nbsp;
+				<div class="spinner-grow spinner-grow-sm '.$row["estado"].'" role="status">
+				  <span class="sr-only">Loading...</span>
 				</div>
 			  </small>
 				<br>
@@ -46,7 +46,7 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>ID: </strong>'.$row["id_user"].'
 				<br>
-				<img src="https://raw.githubusercontent.com/Veloz-X/recursos/master/trans_app/img/1-free_fire_logo.jpg" width="20">&nbsp;'.$row["nick"].'
+				<img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">&nbsp;'.$row["nick"].'
 				<br>
 				<strong>Pago: </strong>'.$row["precio"].'*
 				<br>
@@ -59,7 +59,7 @@ if(mysqli_num_rows($result) > 0)
 				<tr>
  
 				<td colspan="2">
-				
+
 				</tr>
 
 

@@ -1,6 +1,7 @@
 <?php 
 
 
+// $conn= new mysqli("localhost","storcdnu_trans_sag","Siselacontra1","storcdnu_trans_sag");
 $conn= new mysqli("localhost","storcdnu_trans_sag","Siselacontra1","storcdnu_trans_sag");
 
 if ($conn->connect_errno) {
