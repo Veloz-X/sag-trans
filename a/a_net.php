@@ -11,7 +11,7 @@ if(isset($_POST["query"]))
 	$search = mysqli_real_escape_string($conn, $_POST["query"]);
 	$query = "
 	SELECT * FROM $table
-	WHERE documento LIKE '".$search."'
+	 LIKE '".$search."'
 	";
 }
 else
