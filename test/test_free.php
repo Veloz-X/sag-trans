@@ -71,7 +71,12 @@
     </tr>
     <hr>
     <hr>
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="row row-cols-1 row-cols-1 ">
+
+            <!-- FREE FIRE -->
+           <?php foreach ($recarga as $item) : ?>
+              <!-- gg -->
+              <div class="col-xl-3 col-md-6 mb-4">
                 <a href="<?= $item['url'] ?>" class="text-decoration:none">
                   <div class="card border-left-success shadow h-100 py-1">
                     <div class="card-body">
@@ -91,6 +96,10 @@
                   </div>
                 </a>
               </div>
+
+          
+
+          </div>
     
 </body>
 </html>
