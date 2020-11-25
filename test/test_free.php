@@ -25,56 +25,33 @@
 </head>
 
 <body>
-<table class="table table bordered">
-    <tr>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Brand -->
+    <a href="index.php">
+      <img class="p-1" src="https://www.storeandgamers.com/uploads/logo/logo_5ed1c11998a10.png" width="150">
+    </a>
 
-        <th>Mi Orden</th>
+    </nav>
 
-    </tr>
+  <!-- INICIO DE PRUEBA -->
+  <div class="accordion" id="accordionExample">
+    <!-- JUEGO -->
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Recarga Directa
+          </button>
+        </h2>
+      </div>
 
-    <tr>
-
-
-        <td>
-            <font size=2>
-                <strong>Doc. # </strong>'.$row["documento"].'&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<small class="text-muted">
-                    &nbsp; Pagado &nbsp;
-                    <div class="spinner-grow spinner-grow-sm '.$row[" estado"].'" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                </small>
-                <br>
-                <strong>Fecha: </strong>'.$row["fecha"].'
-                <br>
-                <strong>ID: </strong>'.$row["id_user"].'
-                <br>
-                <img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">&nbsp;'.$row["nick"].'
-                <br>
-                <strong>Pago: </strong>'.$row["precio"].'*
-                <br>
-                <strong>Diamantes: </strong>'.$row["diamantes"].'&nbsp;<img src="https://gametricksnohacks.digital/freefir/img/resource-2-img.png" width="20">
-                <br>
-                <strong>Nota: </strong>'.$row["nota"].'*
-
-            </font>
-        </td>
-    <tr>
-
-        <td colspan="2">
-            <a href="">
-                <input type="submit" name="details" class="btn btn-primary btn-block" value="Próximamente"></td>
-        </a>
-    </tr>
-
-
-
-    </tr>
-    <hr>
-    <hr>
-    <div class="row row-cols-1 row-cols-1 ">
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <!-- PRODUCTO JUEGO  -->
+          <div class="row row-cols-1 row-cols-1 ">
 
             <!-- FREE FIRE -->
-         
+            <?php foreach ($recarga as $item) : ?>
               <!-- gg -->
               <div class="col-xl-3 col-md-6 mb-4">
                 <a href="<?= $item['url'] ?>" class="text-decoration:none">
@@ -97,9 +74,179 @@
                 </a>
               </div>
 
-          
+            <?php endforeach; ?>
 
           </div>
-    
+
+          <!-- FIN PRODUCTO  -->
+
+        </div>
+      </div>
+    </div>
+    <!-- TARJETA DE REGALO  -->
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Gift Cards
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          <!-- PRODUCTO -->
+          <div class="row row-cols-1 row-cols-1">
+
+            <?php foreach ($giftcard as $item) : ?>
+
+              <div class="col-xl-3 col-md-6 mb-4">
+                <a href="<?= $item['url'] ?>" class="text-decoration:none">
+                  <div class="card border-left-success shadow h-100 py-1">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto shadow">
+                          <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+                        </div>
+                        <h5>&nbsp; &nbsp;</h5>
+                        <div class="col mr-2">
+
+                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $item['title'] ?></div>
+                          <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Revisa tu Orden</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <?php endforeach; ?>
+
+
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingtree">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="headingtree">
+            Servicios
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTree" class="collapse" aria-labelledby="headingtree" data-parent="#accordionExample">
+        <div class="card-body">
+          <!-- PRODUCTO -->
+
+
+          <div class="row row-cols-1 row-cols-1">
+            <div class="row">
+
+              <!-- Earnings (Monthly) Card Example -->
+              <?php foreach ($servicio as $item) : ?>
+
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <a href="<?= $item['url'] ?>" class="text-decoration:none">
+                    <div class="card border-left-success shadow h-100 py-1">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto shadow">
+                            <img class="" style="border-radius: 8px; float:left;" width="72" height="72" src="<?= $item['icono'] ?>">
+                          </div>
+                          <h5>&nbsp; &nbsp;</h5>
+                          <div class="col mr-2">
+
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $item['title'] ?></div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                              Revisa tu Orden</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              <?php endforeach; ?>
+
+
+
+              <!-- Pending Requests Card Example -->
+
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- FIN DE PERUEBA -->
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mt-3  p-4 rounded">
+
+        <div class="text-center">
+
+          <!-- TABLA -->
+          <table class="table table-striped table-sm">
+            <tbody>
+              <!-- REDES SOCIALES -->
+              <tr>
+                <td class="m_3731599029898677976content-block" style="text-align:center;width:100%" colspan="2">
+                  <br>
+                  <a href="https://www.facebook.com/StoreAndGamers/" style="color:transparent;margin-right:5px" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.facebook.com/StoreAndGamers/&amp;source=gmail&amp;ust=1596475002202000&amp;usg=AFQjCNH0GLFST_dKlTqNy5rEESjsQ6PhvQ">
+                    <img src="https://ci3.googleusercontent.com/proxy/rP7eQG6dO1i7uuuLcP5NhNewC1yQJSU5gt1r1mFLKzfvVppilfGpLl2GwhOLGgPrGGLmzSlx0gldeWhicYmxcFzZIXJalhAsm3vJAnya9BAGnMT1rmU=s0-d-e1-ft#https://www.storeandgamers.com/assets/img/social-icons/facebook.png" alt="" style="width:28px;height:28px" class="CToWUd">
+                  </a>
+                  <a href="https://www.instagram.com/storeandgamers/" style="color:transparent;margin-right:5px" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.instagram.com/storeandgamers/&amp;source=gmail&amp;ust=1596475002203000&amp;usg=AFQjCNHYnoXlWp_ZbjPVYlztejx07yLsJQ">
+                    <img src="https://ci6.googleusercontent.com/proxy/mj1RW4wHTKTt1qqvxr1zDJ1enlDaBoViMEmCC56_5v7Nwxt2Bc3osjFsWUVQ-X-RfLP98bg_x0BgyuVR2Lmf31EJ947h5o6u9k5H1r9ruJEzZJ5S-Xnm=s0-d-e1-ft#https://www.storeandgamers.com/assets/img/social-icons/instagram.png" alt="" style="width:28px;height:28px" class="CToWUd">
+                  </a>
+                  <a href="https://www.youtube.com/channel/UC2VKVJWFSb-JA7uq5A4WLcQ" style="color:transparent;margin-right:5px" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.youtube.com/channel/UC2VKVJWFSb-JA7uq5A4WLcQ&amp;source=gmail&amp;ust=1596475002203000&amp;usg=AFQjCNFJQ4zNeFB-bWpLpOMKIoaHK9EZsg">
+                    <img src="https://ci3.googleusercontent.com/proxy/QY-AqKqRB2uqeKqQ6T6Bxrqqhhl5ryqdgd3mtvD_Yj1R9x9iXtThVZBM-qkyL87M1kqCzowY4U_rnKGnMyMuu7rE4N3OVyj6eiOvdLlWqYWDim5s6w=s0-d-e1-ft#https://www.storeandgamers.com/assets/img/social-icons/youtube.png" alt="" style="width:28px;height:28px" class="CToWUd">
+                  </a><br>
+                  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">Ecuador, Guayaquil</span><br>
+                  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">© 2020 StoreAndGamers All Rights Reserved.</span><br>
+                  <span style="font-family: Arial, Helvetica, sans-serif; font-size: small; color:#a3a3a3;">¿Tienes Algún Problema ? <a href="https://www.storeandgamers.com/contact-5">Contactanos</a></span>
+                  <br>
+                  v.1.5.b
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+          <!-- DESCRIPCION -->
+          <hr>
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
 </body>
+
 </html>
