@@ -46,7 +46,7 @@ if(mysqli_num_rows($result) > 0)
 				<br>
 				<strong>ID: </strong>'.$row["id_user"].'
 				<br>
-				<img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">&nbsp;'.$row["nick"].'
+				<img src="https://raw.githubusercontent.com/Veloz-X/recursos/master/trans_app/img/1-free_fire_logo.jpg" width="20">&nbsp;'.$row["nick"].'
 				<br>
 				<strong>Pago: </strong>'.$row["precio"].'*
 				<br>
