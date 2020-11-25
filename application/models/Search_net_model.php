@@ -7,7 +7,7 @@ class Search_net_model extends CI_Model
 	{
 		$this->db->select("*");
 		$this->db->from("t_net");
-		$this->db->like('id', $query, 'after');
+		$this->db->like('documento', $query, 'after');
 		// if($query != '')
 		// {
 		// 	$this->db->like('documento', $query);
