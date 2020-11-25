@@ -59,9 +59,7 @@ if(mysqli_num_rows($result) > 0)
 				<tr>
  
 				<td colspan="2">
-				<a href="">
-				<input type="submit" name="details"  class="btn btn-primary btn-block" value="Próximamente"></td>
-				</a>	
+				
 				</tr>
 
 
