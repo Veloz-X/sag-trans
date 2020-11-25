@@ -2,17 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Search_net extends CI_Controller {
-	public function __construct()
-	{
-		$this->load->model('search_net_model');
-		parent::__construct();
-	}
 
     function index()
 	{
-		$search_text=$this->input->post('search_text',true);
-		$data['store']=$this->search_net_model->set($search_text);
-		$this->load->view('search_net',$data);
+		$this->load->view('search_net');
 	}
 
 	function fetch()
