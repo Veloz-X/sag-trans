@@ -5,6 +5,7 @@ class Search_net extends CI_Controller {
 
     function index()
 	{
+
 		$this->load->view('search_net');
 	}
 
@@ -28,26 +29,32 @@ class Search_net extends CI_Controller {
 							<th>Country</th>
 						</tr>
 		';
-		if($data->num_rows()>0){
-			foreach ($data->result() as $row) {
-				$output.='
-				<tr>
-					<td>'.$row->documento.'</td>
-					<td>'.$row->documento.'</td>
-					<td>'.$row->documento.'</td>
-					<td>'.$row->documento.'</td>
-					<td>'.$row->documento.'</td>
-				</tr>
-
+		if($data->num_rows() > 0)
+		{
+			foreach($data->result() as $row)
+			{
+				$output .= '
+						<tr>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
+							<td>'.$row->documento.'</td>
+						</tr>
 				';
 			}
-		}else{
-			$output.='<tr>
-				<td colsplan="5">No Data Found</td>
-			</tr>
-			';
 		}
-	}
+		else
+		{
+			$output .= '<tr>
+							<td colspan="5">No Data Found</td>
+						</tr>';
+		}
+		$output .= '</table>';
+		echo $output;
+		}else {
+			echo '<br> Ingrese el # De Documento';
+		}
 		
 	}
 	
