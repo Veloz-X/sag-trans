@@ -9,8 +9,8 @@ class Search_net_model extends CI_Model
 	public function set($search_text)
 	{
 		$this->bd->select('*');
-		$this->db->live('id',$search_text);
-		$this->db->live('id',$search_text);
+		$this->db->like('id',$search_text);
+		$this->db->or_like('id',$search_text);
 		return $this->db->get('t_net')->result();
 
 	}
