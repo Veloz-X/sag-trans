@@ -31,29 +31,21 @@
 
 
 	</nav>
-<?php echo form_open('search_net'); ?>
+
 	<div class="container">
 		<div class="input-group ">
 			<div class="input-group-prepend">
 				<span class="input-group-text" id="basic-addon1">#</span>
 			</div>
-			<input type="text" name="search_text" value="search_text" id="search_text" placeholder="Documento" class="form-control" />
+			<input type="text" name="search_text" id="search_text" placeholder="Documento" class="form-control" />
 			&nbsp;
 			
 			
-				</div>
-			<div id="result"></div>
-			</div>
-			<div style="clear:both"></div>
+		</div>
+		<div id="result"></div>
 	</div>
-	<?php echo form_close(''); ?>
-
-
-	<h1>Hola Mundo</h1>
-	<?php foreach ($store as $search_net) {?>
-		<?php echo  $search_net->id ?>
-		<?php echo  $search_net->id ?>
-		<?php} ?>
+	<div style="clear:both"></div>
+	</div>
 </body>
 
 </html>
