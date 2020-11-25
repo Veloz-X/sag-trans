@@ -1,3 +1,95 @@
+<?php
+$menu = array(
+  array(
+    'title' => 'Free Fire',
+    'img' => 'https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png',
+    'url' => base_url('/trans_free'),
+  ),
+  array(
+    'title' => 'PUBG MOBILE',
+    'img' => 'https://seagm-media.seagmcdn.com/icon_400/930.jpg',
+    'url' => base_url('/demo'),
+  ),
+  array(
+    'title' => 'Google Play Gift Card',
+    'img' => 'https://seagm-media.seagmcdn.com/icon_400/225.jpg',
+    'url' => base_url('/p/googlep.php'),
+  ),
+  array(
+    'title' => 'iTunes Gift Card',
+    'img' => 'https://seagm-media.seagmcdn.com/icon_400/576.jpg',
+    'url' => base_url('/mante'),
+  ),
+  array(
+    'title' => 'PlayStation Network Card',
+    'img' => 'https://seagm-media.seagmcdn.com/icon_400/189.jpg',
+    'url' => base_url('/mante'),
+  ),
+);
+// MENU X CATEGORIA
+$recarga = array(
+  array(
+    'title' => 'Free Fire',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/869.jpg',
+    'icono' => 'https://seagm-media.seagmcdn.com/icon_400/869.jpg',
+    'url' => base_url('/p/free.php'),
+  ),
+  array(
+    'title' => 'PUBG Mobile',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/930.jpg',
+    'icono' => 'https://seagm-media.seagmcdn.com/icon_400/756.jpg',
+    'url' => base_url('/p/pubgm.php'),
+  ),
+  array(
+    'title' => 'Mobile Legends',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/758.jpg',
+    'icono' => 'https://seagm-media.seagmcdn.com/icon_400/758.jpg',
+    'url' => base_url('/mante'),
+  ),
+);
+$servicio = array(
+  array(
+    'title' => 'Netflix',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/595.jpg',
+    'icono' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png',
+    'url' => base_url('/p/net.php'),
+  ),
+  array(
+    'title' => 'Amazon Prime',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono' => 'https://lh3.googleusercontent.com/-Zgwtg4Ox6QCOKy6syNCWEnlI3uMw9C3ZUS-Fb_uicTh69xwExuSW9FC91A2kaWHoE6E=s180-rw',
+    'url' => base_url('/mante'),
+  )
+);
+$giftcard = array(
+  array(
+    'title' => 'Google Play',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono' => 'https://seagm-media.seagmcdn.com/icon_400/225.jpg',
+    'url' => base_url('/p/googlep.php'),
+  ),
+  array(
+    'title' => 'Itunes',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono' => 'https://seagm-media.seagmcdn.com/icon_400/191.jpg',
+    'url' => base_url('/mante'),
+  ),
+  array(
+    'title' => 'PlayStation Network',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono' => 'https://seagm-media.seagmcdn.com/icon_400/189.jpg',
+    'url' => base_url('/mante'),
+  ),
+  array(
+    'title' => 'Xbox Live',
+    'img' => 'https://seagm-media.seagmcdn.com/special_deals/card/433.jpg',
+    'icono' => 'https://seagm-media.seagmcdn.com/icon_400/194.jpg',
+    'url' => base_url('/mante'),
+  ),
+);
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +109,7 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link href="https://http://transferencia.storeandgamers.com/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
