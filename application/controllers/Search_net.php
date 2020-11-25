@@ -6,6 +6,7 @@ class Search_net extends CI_Controller {
     function index()
 	{
 
+
 		$this->load->view('search_net');
 	}
 
