@@ -18,54 +18,80 @@ else
 {
 	echo '<br> Ingrese el # De Documento';
 }
-$result = mysqli_query($conn, $query);
+$result = mysqli_query($conn,$query);
 if(mysqli_num_rows($result) > 0)
 {
-	$output .= '<div class="table-responsive">
-					<table class="table table bordered">
-						<tr >
-
-							<th>Mi Orden</th>
-
-						</tr>';
+	$output .= '
+	<hr>
+	<strong>Mi Orden</strong>
+	<hr>
+	';
 	while($row = mysqli_fetch_array($result))
 	{
 		$output .= '
-			<tr>
+			<div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+									<div class="row no-gutters align-items-center">
+									
+                                        <div class="col mr-4">
+                                            <div class="text-xs font-weight text-dark mb-1">
+												<strong>Doc.# </strong>'.$row["documento"].'</div>
+											<div class="text-xs font-weight text-dark mb-1">
+												<strong>Fecha: </strong>'.$row["fecha"].'</div>
+											<div class="text-xs font-weight text-dark mb-1">
+												<strong>ID: </strong>'.$row["id_user"].'</div>
+											<div class="text-xs font-weight text-dark mb-1">
+											<img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">  '.$row["nick"].'</div>
+											<div class="text-xs font-weight text-dark mb-1">
+												<strong>Diamantes: </strong>'.$row["diamantes"].' <img src="https://gametricksnohacks.digital/freefir/img/resource-2-img.png" width="15"></div>
+											<div class="text-xs font-weight text-dark mb-1">
+												<strong>Fecha: </strong>'.$row["fecha"].'</div>
+												<div class="text-xs font-weight text-dark mb-1">
+												<strong>Nota: </strong>'.$row["nota"].'</div>
+										</div>
+										
+										<div class="col mr-4">
+                                            <div class="text-xs font-weight text-dark mb-1">
+											<span
+											class="float-right "><span>Estado: &nbsp;</span><div class=" spinner-grow spinner-grow-sm text-'.$row["estado"].'" role="status">
+												<span class="sr-only">Loading...</span>
+											  </div></h4></span></div>
+											<div class="text-xs font-weight text-dark mb-1">
+											&nbsp;</div>
+											<div class="text-xs font-weight text-dark mb-1">
+											&nbsp;</div>
+											<div class="text-xs font-weight text-dark mb-1">
+											&nbsp;</div>
+											<div class="text-xs font-weight text-dark mb-1">
+											&nbsp;</div>
+											<div class="text-xs font-weight text-dark mb-1">
+											&nbsp;</div>
+											<div class="text-xs font-weight text-dark mb-1">
+											&nbsp;</div>
+											<div class="text-xs font-weight text-dark mb-1">
+											&nbsp;</div>
+												<div class="float-right h5 mb-0 mr-3 font-weight-bold text-gray-800">
+												$'.$row["precio"].'</div>
+										</div>
+										
+										
+										
+                                    </div>
+                                </div>
+                            </div>
+						</div>
 
 
-				<td><font  size=2>
-				<strong>Doc. # </strong>'.$row["documento"].'<span
-				class="float-right"><span>Estado: &nbsp;</span><div class="float-right spinner-grow spinner-grow-sm '.$row["estado"].'" role="status">
-					<span class="sr-only">Loading...</span>
-				  </div></h4></span>
-			  </small>
-				<br>
-				<strong>Fecha: </strong>'.$row["fecha"].'
-				<br>
-				<strong>ID: </strong>'.$row["id_user"].'
-				<br>
-				<img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/icon.png" width="20">&nbsp;'.$row["nick"].'
-				<br>
-				<strong>Pago: </strong>'.$row["precio"].'*
-				<br>
-				<strong>Diamantes: </strong>'.$row["diamantes"].'&nbsp;<img src="https://gametricksnohacks.digital/freefir/img/resource-2-img.png" width="20">
-				<br>
-				<strong>Nota: </strong>'.$row["nota"].'*
-
-				</font>
-				</td>
-				<tr>
- 
-				<td colspan="2">
-
-				</tr>
-
-
-				
-			</tr>
+                      
+                </div>
 		';
+		
 	}
+	
 	echo $output;
 }
 else

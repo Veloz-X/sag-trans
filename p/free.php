@@ -21,6 +21,7 @@ include '../a/action.php';
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link href="/css/sb-admin-2.min.css" rel="stylesheet">
 </head>
 
 <body>
